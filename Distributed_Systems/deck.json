@@ -457,6 +457,16 @@
             "guid": "kd(7Wf&WfY",
             "note_model_uuid": "c7338896-9674-11ed-869b-9b2970bf38d4",
             "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "System Model: Timing assumptions",
+                "Assume one of the following for network and nodes:<br>* **Synchronous**<br>&nbsp; &nbsp; * Message latency no greater than a known upper bound. Nodes execute algorithm at a known speed<br>* **Partially synchronous**<br>&nbsp; &nbsp; * System is asynchronous for some finite periods of time, synchronous otherwise<br>* **Asynchronous**<br>&nbsp; &nbsp; * Messages can be delayed arbitrarily. Nodes can pause execution arbitrarily. No timing guarantees at all."
+            ],
+            "guid": "uGeDz$30l|",
+            "note_model_uuid": "c7338896-9674-11ed-869b-9b2970bf38d4",
+            "tags": []
         }
     ],
     "reviewLimit": null,
