@@ -1,0 +1,464 @@
+{
+    "__type__": "Deck",
+    "children": [],
+    "crowdanki_uuid": "c73360f0-9674-11ed-869b-9b2970bf38d4",
+    "deck_config_uuid": "c7336802-9674-11ed-869b-9b2970bf38d4",
+    "deck_configurations": [
+        {
+            "__type__": "DeckConfig",
+            "autoplay": true,
+            "buryInterdayLearning": false,
+            "crowdanki_uuid": "c7336802-9674-11ed-869b-9b2970bf38d4",
+            "dyn": false,
+            "interdayLearningMix": 0,
+            "lapse": {
+                "delays": [
+                    10.0
+                ],
+                "leechAction": 1,
+                "leechFails": 8,
+                "minInt": 1,
+                "mult": 0.0
+            },
+            "maxTaken": 60,
+            "name": "Default",
+            "new": {
+                "bury": false,
+                "delays": [
+                    1.0,
+                    10.0
+                ],
+                "initialFactor": 2500,
+                "ints": [
+                    1,
+                    4,
+                    0
+                ],
+                "order": 1,
+                "perDay": 20
+            },
+            "newGatherPriority": 0,
+            "newMix": 0,
+            "newPerDayMinimum": 0,
+            "newSortOrder": 0,
+            "replayq": true,
+            "rev": {
+                "bury": false,
+                "ease4": 1.3,
+                "hardFactor": 1.2,
+                "ivlFct": 1.0,
+                "maxIvl": 36500,
+                "perDay": 200
+            },
+            "reviewOrder": 0,
+            "timer": 0
+        }
+    ],
+    "desc": "",
+    "dyn": 0,
+    "extendNew": 0,
+    "extendRev": 0,
+    "media_files": [
+        "_auto-render.js",
+        "_highlight.css",
+        "_highlight.js",
+        "_katex.css",
+        "_katex.min.js",
+        "_markdown-it-mark.js",
+        "_markdown-it.min.js",
+        "_mhchem.js",
+        "paste-1f139cb3a74b90d52e2d07906be33fdaa99b1cab.png",
+        "paste-1ff7a07991d757442d4be8610a27f4ec683918fb.png",
+        "paste-96f3d1a9d93b985186d6ed5e318cf694d22d044a.png",
+        "paste-a3d8032f3d07e35378483af681dccf2ed95c6eb0.png",
+        "paste-a449c7964b3f1b87a15280dfd50d410835ab6815.png",
+        "paste-d83000c31f9eb67401b16e2e360de7f3ed953693.png",
+        "paste-eb96ed52c06b66d0bc655f18d14ec6d955509db0.png",
+        "pig architecture.png"
+    ],
+    "name": "Distributed Systems",
+    "newLimit": null,
+    "newLimitToday": null,
+    "note_models": [
+        {
+            "__type__": "NoteModel",
+            "crowdanki_uuid": "c7337a0e-9674-11ed-869b-9b2970bf38d4",
+            "css": ".card {\n    font-family: arial;\n    font-size: 20px;\n    text-align: center;\n    color: black;\n    background-color: white;\n}\n",
+            "flds": [
+                {
+                    "description": "",
+                    "font": "Source Code Pro",
+                    "name": "Front",
+                    "ord": 0,
+                    "rtl": false,
+                    "size": 20,
+                    "sticky": false
+                },
+                {
+                    "description": "",
+                    "font": "Source Code Pro",
+                    "name": "Back",
+                    "ord": 1,
+                    "rtl": false,
+                    "size": 20,
+                    "sticky": false
+                }
+            ],
+            "latexPost": "\\end{document}",
+            "latexPre": "\\documentclass[12pt]{article}\n\\special{papersize=3in,5in}\n\\usepackage[utf8]{inputenc}\n\\usepackage{amssymb,amsmath}\n\\pagestyle{empty}\n\\setlength{\\parindent}{0in}\n\\begin{document}\n",
+            "latexsvg": false,
+            "name": "Basic",
+            "req": [
+                [
+                    0,
+                    "any",
+                    [
+                        0
+                    ]
+                ]
+            ],
+            "sortf": 0,
+            "tmpls": [
+                {
+                    "afmt": "{{FrontSide}}\n\n<hr id=answer>\n\n{{Back}}",
+                    "bafmt": "",
+                    "bfont": "",
+                    "bqfmt": "",
+                    "bsize": 0,
+                    "did": null,
+                    "name": "Card 1",
+                    "ord": 0,
+                    "qfmt": "{{Front}}"
+                }
+            ],
+            "type": 0
+        },
+        {
+            "__type__": "NoteModel",
+            "crowdanki_uuid": "c7338896-9674-11ed-869b-9b2970bf38d4",
+            "css": "\n\n.card {\n  font-family: arial;\n  font-size: 20px;\n  color: black;\n  background-color: white;\n}\ntable, th, td {\n\tborder: 1px solid black;\n\tborder-collapse: collapse;\n}\n#front, #back, #extra {\n\tvisibility: hidden;\n}\npre code {\n  background-color: #eee;\n  border: 1px solid #999;\n  display: block;\n  padding: 20px;\n  overflow: auto;\n}\n",
+            "flds": [
+                {
+                    "description": "",
+                    "font": "Arial",
+                    "name": "Front",
+                    "ord": 0,
+                    "rtl": false,
+                    "size": 20,
+                    "sticky": false
+                },
+                {
+                    "description": "",
+                    "font": "Arial",
+                    "name": "Back",
+                    "ord": 1,
+                    "rtl": false,
+                    "size": 20,
+                    "sticky": false
+                }
+            ],
+            "latexPost": "\\end{document}",
+            "latexPre": "\\documentclass[12pt]{article}\n\\special{papersize=3in,5in}\n\\usepackage[utf8]{inputenc}\n\\usepackage{amssymb,amsmath}\n\\pagestyle{empty}\n\\setlength{\\parindent}{0in}\n\\begin{document}\n",
+            "latexsvg": false,
+            "name": "KaTeX and Markdown Basic",
+            "req": [
+                [
+                    0,
+                    "any",
+                    [
+                        0
+                    ]
+                ]
+            ],
+            "sortf": 0,
+            "tmpls": [
+                {
+                    "afmt": "\n\n<div id=\"front\"><pre>{{Front}}</pre></div>\n\n<hr id=answer>\n\n<div id=\"back\"><pre>{{Back}}</pre></div>\n\n<script>\n\tvar getResources = [\n\t\tgetCSS(\"_katex.css\", \"https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css\"),\n\t\tgetCSS(\"_highlight.css\", \"https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.0.1/styles/default.min.css\"),\n\t\tgetScript(\"_highlight.js\", \"https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.0.1/highlight.min.js\"),\n\t\tgetScript(\"_katex.min.js\", \"https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.js\"),\n\t\tgetScript(\"_auto-render.js\", \"https://cdn.jsdelivr.net/gh/Jwrede/Anki-KaTeX-Markdown/auto-render-cdn.js\"),\n\t\tgetScript(\"_markdown-it.min.js\", \"https://cdnjs.cloudflare.com/ajax/libs/markdown-it/12.0.4/markdown-it.min.js\"),\n\t\tgetScript(\"_markdown-it-mark.js\",\"https://cdn.jsdelivr.net/gh/Jwrede/Anki-KaTeX-Markdown/_markdown-it-mark.js\")\n\t];\n        Promise.all(getResources).then(() => getScript(\"_mhchem.js\", \"https://cdn.jsdelivr.net/npm/katex@0.13.11/dist/contrib/mhchem.min.js\")).then(render).catch(show);\n\t\n\n\tfunction getScript(path, altURL) {\n\t\treturn new Promise((resolve, reject) => {\n\t\t\tlet script = document.createElement(\"script\");\n\t\t\tscript.onload = resolve;\n\t\t\tscript.onerror = function() {\n\t\t\t\tlet script_online = document.createElement(\"script\");\n\t\t\t\tscript_online.onload = resolve;\n\t\t\t\tscript_online.onerror = reject;\n\t\t\t\tscript_online.src = altURL;\n\t\t\t\tdocument.head.appendChild(script_online);\n\t\t\t}\n\t\t\tscript.src = path;\n\t\t\tdocument.head.appendChild(script);\n\t\t})\n\t}\n\n\tfunction getCSS(path, altURL) {\n\t\treturn new Promise((resolve, reject) => {\n\t\t\tvar css = document.createElement('link');\n\t\t\tcss.setAttribute('rel', 'stylesheet');\n\t\t\tcss.type = 'text/css';\n\t\t\tcss.onload = resolve;\n\t\t\tcss.onerror = function() {\n\t\t\t\tvar css_online = document.createElement('link');\n\t\t\t\tcss_online.setAttribute('rel', 'stylesheet');\n\t\t\t\tcss_online.type = 'text/css';\n\t\t\t\tcss_online.onload = resolve;\n\t\t\t\tcss_online.onerror = reject;\n\t\t\t\tcss_online.href = altURL;\n\t\t\t\tdocument.head.appendChild(css_online);\n\t\t\t}\n\t\t\tcss.href = path;\n\t\t\tdocument.head.appendChild(css);\n\t\t});\n\t}\n\n\tfunction render() {\n\t\trenderMath(\"front\");\n\t\tmarkdown(\"front\");\n\t\trenderMath(\"back\");\n\t\tmarkdown(\"back\");\n\t\tshow();\n\t}\n\n\tfunction show() {\n\t\tdocument.getElementById(\"front\").style.visibility = \"visible\";\n\t\tdocument.getElementById(\"back\").style.visibility = \"visible\";\n\t}\n\n\n\tfunction renderMath(ID) {\n\t\tlet text = document.getElementById(ID).innerHTML;\n\t\ttext = replaceInString(text);\n\t\tdocument.getElementById(ID).textContent = text;\n\t\trenderMathInElement(document.getElementById(ID), {\n\t\t\tdelimiters:  [\n  \t\t\t\t{left: \"$$\", right: \"$$\", display: true},\n  \t\t\t\t{left: \"$\", right: \"$\", display: false}\n\t\t\t],\n                        throwOnError : false\n\t\t});\n\t}\n\tfunction markdown(ID) {\n\t\tlet md = new markdownit({typographer: true, html:true, highlight: function (str, lang) {\n                            if (lang && hljs.getLanguage(lang)) {\n                                try {\n                                    return hljs.highlight(str, { language: lang }).value;\n                                } catch (__) {}\n                            }\n\n                            return ''; // use external default escaping\n                        }}).use(markdownItMark);\n\t\tlet text = replaceHTMLElementsInString(document.getElementById(ID).innerHTML);\n\t\ttext = md.render(text);\n\t\tdocument.getElementById(ID).innerHTML = text.replace(/&lt;\\/span&gt;/gi,\"\\\\\");\n\t}\n\tfunction replaceInString(str) {\n\t\tstr = str.replace(/<[\\/]?pre[^>]*>/gi, \"\");\n\t\tstr = str.replace(/<br\\s*[\\/]?[^>]*>/gi, \"\\n\");\n\t\tstr = str.replace(/<div[^>]*>/gi, \"\\n\");\n\t\t// Thanks Graham A!\n\t\tstr = str.replace(/<[\\/]?span[^>]*>/gi, \"\")\n\t\tstr.replace(/<\\/div[^>]*>/g, \"\\n\");\n\t\treturn replaceHTMLElementsInString(str);\n\t}\n\n\tfunction replaceHTMLElementsInString(str) {\n\t\tstr = str.replace(/&nbsp;/gi, \" \");\n\t\tstr = str.replace(/&tab;/gi, \"\t\");\n\t\tstr = str.replace(/&gt;/gi, \">\");\n\t\tstr = str.replace(/&lt;/gi, \"<\");\n\t\treturn str.replace(/&amp;/gi, \"&\");\n\t}\n</script>\n",
+                    "bafmt": "",
+                    "bfont": "",
+                    "bqfmt": "",
+                    "bsize": 0,
+                    "did": null,
+                    "name": "KaTeX and Markdown Basic",
+                    "ord": 0,
+                    "qfmt": "\n\n<div id=\"front\"><pre>{{Front}}</pre></div>\n\n<script>\n\tvar getResources = [\n\t\tgetCSS(\"_katex.css\", \"https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css\"),\n\t\tgetCSS(\"_highlight.css\", \"https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.0.1/styles/default.min.css\"),\n\t\tgetScript(\"_highlight.js\", \"https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.0.1/highlight.min.js\"),\n\t\tgetScript(\"_katex.min.js\", \"https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.js\"),\n\t\tgetScript(\"_auto-render.js\", \"https://cdn.jsdelivr.net/gh/Jwrede/Anki-KaTeX-Markdown/auto-render-cdn.js\"),\n\t\tgetScript(\"_markdown-it.min.js\", \"https://cdnjs.cloudflare.com/ajax/libs/markdown-it/12.0.4/markdown-it.min.js\"),\n                getScript(\"_markdown-it-mark.js\",\"https://cdn.jsdelivr.net/gh/Jwrede/Anki-KaTeX-Markdown/_markdown-it-mark.js\")\n\t];\n        Promise.all(getResources).then(() => getScript(\"_mhchem.js\", \"https://cdn.jsdelivr.net/npm/katex@0.13.11/dist/contrib/mhchem.min.js\")).then(render).catch(show);\n\t\n\n\tfunction getScript(path, altURL) {\n\t\treturn new Promise((resolve, reject) => {\n\t\t\tlet script = document.createElement(\"script\");\n\t\t\tscript.onload = resolve;\n\t\t\tscript.onerror = function() {\n\t\t\t\tlet script_online = document.createElement(\"script\");\n\t\t\t\tscript_online.onload = resolve;\n\t\t\t\tscript_online.onerror = reject;\n\t\t\t\tscript_online.src = altURL;\n\t\t\t\tdocument.head.appendChild(script_online);\n\t\t\t}\n\t\t\tscript.src = path;\n\t\t\tdocument.head.appendChild(script);\n\t\t})\n\t}\n\n\tfunction getCSS(path, altURL) {\n\t\treturn new Promise((resolve, reject) => {\n\t\t\tvar css = document.createElement('link');\n\t\t\tcss.setAttribute('rel', 'stylesheet');\n\t\t\tcss.type = 'text/css';\n\t\t\tcss.onload = resolve;\n\t\t\tcss.onerror = function() {\n\t\t\t\tvar css_online = document.createElement('link');\n\t\t\t\tcss_online.setAttribute('rel', 'stylesheet');\n\t\t\t\tcss_online.type = 'text/css';\n\t\t\t\tcss_online.onload = resolve;\n\t\t\t\tcss.onerror = reject;\n\t\t\t\tcss_online.href = altURL;\n\t\t\t\tdocument.head.appendChild(css_online);\n\t\t\t}\n\t\t\tcss.href = path;\n\t\t\tdocument.head.appendChild(css);\n\t\t});\n\t}\n\n\n\tfunction render() {\n\t\trenderMath(\"front\");\n\t\tmarkdown(\"front\");\n\t\tshow();\n\t}\n\n\tfunction show() {\n\t\tdocument.getElementById(\"front\").style.visibility = \"visible\";\n\t}\n\n\tfunction renderMath(ID) {\n\t\tlet text = document.getElementById(ID).innerHTML;\n\t\ttext = replaceInString(text);\n\t\tdocument.getElementById(ID).textContent = text;\n\t\trenderMathInElement(document.getElementById(ID), {\n\t\t\tdelimiters:  [\n  \t\t\t\t{left: \"$$\", right: \"$$\", display: true},\n  \t\t\t\t{left: \"$\", right: \"$\", display: false}\n\t\t\t],\n            throwOnError : false\n\t\t});\n\t}\n\n\tfunction markdown(ID) {\n\t\tlet md = new markdownit({typographer: true, html:true, highlight: function (str, lang) {\n                            if (lang && hljs.getLanguage(lang)) {\n                                try {\n                                    return hljs.highlight(str, { language: lang }).value;\n                                } catch (__) {}\n                            }\n\n                            return ''; // use external default escaping\n                        }}).use(markdownItMark);\n\t\tlet text = replaceHTMLElementsInString(document.getElementById(ID).innerHTML);\n\t\ttext = md.render(text);\n\t\tdocument.getElementById(ID).innerHTML = text.replace(/&lt;\\/span&gt;/gi,\"\\\\\");\n\t}\n\tfunction replaceInString(str) {\n\t\tstr = str.replace(/<[\\/]?pre[^>]*>/gi, \"\");\n\t\tstr = str.replace(/<br\\s*[\\/]?[^>]*>/gi, \"\\n\");\n\t\tstr = str.replace(/<div[^>]*>/gi, \"\\n\");\n\t\t// Thanks Graham A!\n\t\tstr = str.replace(/<[\\/]?span[^>]*>/gi, \"\")\n\t\tstr.replace(/<\\/div[^>]*>/g, \"\\n\");\n\t\treturn replaceHTMLElementsInString(str);\n\t}\n\n\tfunction replaceHTMLElementsInString(str) {\n\t\tstr = str.replace(/&nbsp;/gi, \" \");\n\t\tstr = str.replace(/&tab;/gi, \"\t\");\n\t\tstr = str.replace(/&gt;/gi, \">\");\n\t\tstr = str.replace(/&lt;/gi, \"<\");\n\t\treturn str.replace(/&amp;/gi, \"&\");\n\t}\n</script>\n"
+                }
+            ],
+            "type": 0
+        }
+    ],
+    "notes": [
+        {
+            "__type__": "Note",
+            "fields": [
+                "Challenges of a distributed system",
+                "* Fault tolerence:<br>&nbsp; &nbsp; - How to recover from failures without incorrect actions<br>* Availability:<br>&nbsp; &nbsp; - 24x7 operations, even with failures<br>* Recovery:<br>&nbsp; &nbsp; - Failed system can restart and rejoin the system<br>* Consistency or correctness:<br>&nbsp; &nbsp; - System invariants are preserved in presence of concurrency, asynchrony, and failures<br>* Scalability<br>* Performance<br>* Security"
+            ],
+            "guid": "GABU,h+W/^",
+            "note_model_uuid": "c7337a0e-9674-11ed-869b-9b2970bf38d4",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "8 Fallacies of&nbsp; distributed systems",
+                "1. Network is reliable<br>2. Latency is zero<br>3. Bandwidth is infinte<br>4. Network is secure<br>5. Topology doesn't change<br>6. There is one administrator<br>7. Transport cost is zero<br>8. Network is homogenous"
+            ],
+            "guid": "bYsj497kW,",
+            "note_model_uuid": "c7337a0e-9674-11ed-869b-9b2970bf38d4",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "Remote Procedure Calls (RPCs)",
+                "Extends a local procedure call:<br><ul><li>Allow two processes to communicate (local or remote via network)</li><li>Residing in different address spaces</li><li>Presumes existence of low-level traport protocol (TCP/IP or UDP)</li></ul><div><br></div><br>"
+            ],
+            "guid": "M*pfL17/8$",
+            "note_model_uuid": "c7337a0e-9674-11ed-869b-9b2970bf38d4",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "RPC common error conditions",
+                "Network data loss resulting in retransmission<br><ul><li>Incorrect operations when data is received multiple times</li></ul><div>Server process crashes during RPC operation</div><div><ul><li>Before completing task -&gt; Client retries the request</li><li>After completing task -&gt; Recovery for consistent state</li></ul><div>Client process crashes before receiving response</div></div><div><ul><li>Client is restarted, server discards response</li></ul><div><br></div></div>"
+            ],
+            "guid": "f`/7ogQV7T",
+            "note_model_uuid": "c7337a0e-9674-11ed-869b-9b2970bf38d4",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "MapReduce programming model",
+                "Write two methods<br><ol><li>Map(k, v) -&gt; &lt;(k1, v1)&gt;</li><li>Reduce(k1, &lt;v1&gt;) -&gt; (k1, v2)</li></ol><div>Run-time library takes care of everything else</div>"
+            ],
+            "guid": "KgSNaB:gyz",
+            "note_model_uuid": "c7337a0e-9674-11ed-869b-9b2970bf38d4",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "MapReduce for word-count<br><ol><li>map(string key, string value)</li><li>reduce(string key, iterator values)</li></ol>",
+                "```python<br>def map(string key, string value):<br>&nbsp; &nbsp; # key: document name<br>&nbsp; &nbsp; # value: document contents<br>&nbsp; &nbsp; for word w in value:<br>&nbsp; &nbsp; &nbsp; &nbsp; EmitIntermediate(w, \"1\")<br>```<br><br>```python<br>def reduce(string key, iterator values):<br>&nbsp; &nbsp; # key: word <br>&nbsp; &nbsp; # values: list of counts\n<br>&nbsp; &nbsp; int results = 0;\n<br>&nbsp; &nbsp; for each v in values: <br>&nbsp; &nbsp; &nbsp; &nbsp; result += ParseInt(v);\n<br>&nbsp; &nbsp; Emit(key, AsString(result));<br>```<br><br>Maps and reduce keys do **not** need to be equal"
+            ],
+            "guid": "wdt@ck{6w!",
+            "note_model_uuid": "c7338896-9674-11ed-869b-9b2970bf38d4",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "What is Pig Latin?",
+                "Distributed dataflow queries<br>Pig Latin = SQL-kind queries + Distributed executin"
+            ],
+            "guid": "Ew>}*4//5U",
+            "note_model_uuid": "c7338896-9674-11ed-869b-9b2970bf38d4",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "Pig Architecture",
+                "<img src=\"pig architecture.png\">"
+            ],
+            "guid": "n;PzQKMVGR",
+            "note_model_uuid": "c7338896-9674-11ed-869b-9b2970bf38d4",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "Pig Compilation Process",
+                "Logical Plan -&gt; Physical Plan -&gt; MapReduce Plan<br><br><img src=\"paste-a3d8032f3d07e35378483af681dccf2ed95c6eb0.png\"><br><img src=\"paste-1ff7a07991d757442d4be8610a27f4ec683918fb.png\"><br><img src=\"paste-eb96ed52c06b66d0bc655f18d14ec6d955509db0.png\">"
+            ],
+            "guid": "C44:&c6?]j",
+            "note_model_uuid": "c7338896-9674-11ed-869b-9b2970bf38d4",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "What is a Lease?",
+                "* A fundamental abstraction for scalable resource management<br><br>* A lease is a contract that gives it holder **specified** rights over a resource for a **limit period of time** -&gt; temporary lock<br><br>* Process asks for a lease for a limited period of time, expires afterwards<br>* Can renew the lease befire it expires"
+            ],
+            "guid": "c$O<5[e_/x",
+            "note_model_uuid": "c7338896-9674-11ed-869b-9b2970bf38d4",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "Problem with locking?",
+                "A process an dhold the resource indefinitely if it crashes / has network failure"
+            ],
+            "guid": "dq_nqh?Z{E",
+            "note_model_uuid": "c7338896-9674-11ed-869b-9b2970bf38d4",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "What kind of Lease Variants exist?",
+                "# Read Lease<br>* Allows clients to cache clean data<br>* **Guarantee**: No other client is modifying data<br><br># Write lease<br>* Client can locally modify the data<br>* **Guarantee**: No other client has data caches"
+            ],
+            "guid": "Fxy#CFMGo]",
+            "note_model_uuid": "c7338896-9674-11ed-869b-9b2970bf38d4",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "Workflow for using leases",
+                "<ol><li>&nbsp;Client requests a lease with *resource id*</li><li>&nbsp;Server determines if lease can be granted</li><ul><li>Read leases may be granted <b>concurrently</b></li><li>Write lease are granted exclusively</li></ul><li>If conflict exists, server may send eviction notices</li><ul><li>Evicted write lease must write back</li><li>Evicted read leases must flush / disable caching</li><li>Client acknowledges when completed</li></ul></ol>"
+            ],
+            "guid": "i`ws-T5tn>",
+            "note_model_uuid": "c7338896-9674-11ed-869b-9b2970bf38d4",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "Recovery for bounded leases",
+                "* Before lease expires, client must renew lease<br>* What if client fails while holding a lease?<br>&nbsp; &nbsp; * Server waits until lease expires, then reclaims<br>&nbsp; &nbsp; * If client fails during eviction, server waits then reclaims<br>* Server fails while leases outstanding?&nbsp;<br>&nbsp; &nbsp; * On server recovery: Wait lease `period + clock skew` before issuing new leases"
+            ],
+            "guid": "A/twt8fz(G",
+            "note_model_uuid": "c7338896-9674-11ed-869b-9b2970bf38d4",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "What is a issue with leases?",
+                "Leases depend on well-behaved clocks. Inconsistencies if clock speeds between lease grantor and holder are mismatched"
+            ],
+            "guid": "$%wt#v!%|",
+            "note_model_uuid": "c7338896-9674-11ed-869b-9b2970bf38d4",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "Google File System (GFS) Architecture Diagrams",
+                "<img src=\"paste-1f139cb3a74b90d52e2d07906be33fdaa99b1cab.png\"><br><img src=\"paste-d83000c31f9eb67401b16e2e360de7f3ed953693.png\"><br><img src=\"paste-a449c7964b3f1b87a15280dfd50d410835ab6815.png\"><br><img src=\"paste-96f3d1a9d93b985186d6ed5e318cf694d22d044a.png\">"
+            ],
+            "guid": "voCj-6E=-[",
+            "note_model_uuid": "c7338896-9674-11ed-869b-9b2970bf38d4",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "Consistency for HDFS",
+                "# Updates (only GFS)<br>* File region may end up containing mingled fragments from different clients<br>* E.g. writes to different chunks may be ordered differently by different primary replica<br>* Writes are *consistent* but *undefined* in GFS<br><br># Appends<br>* Append causes data to be appended *atomically* at least once<br>* Offset chosen by HDFS, not by the client"
+            ],
+            "guid": "mS)_DMuj%9",
+            "note_model_uuid": "c7338896-9674-11ed-869b-9b2970bf38d4",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "Latency Back-2-envelope numbers<br>* Same building?<br>* One continent to another?<br>* Hard drives in a van?",
+                "* Same building: $\\approx 1ms$<br>* One continent to another: $\\approx 100ms$<br>* Hard drives in a van: $\\approx 1 day$"
+            ],
+            "guid": "ui[0l2`OE>",
+            "note_model_uuid": "c7338896-9674-11ed-869b-9b2970bf38d4",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "Bandwith Back-2-envelope numbers<br>* 3G cellular data?<br>* Home broadband?<br>* Hard drives in a van?",
+                "* 3G cellular data: $\\approx 1 Mbit/s$<br>* Home broadband: $\\approx 10 Mbit/s$<br>* Hard drives in a van $\\approx 50 TB / box \\approx 1 Gbit/s$"
+            ],
+            "guid": "fH8^-X&=vZ",
+            "note_model_uuid": "c7338896-9674-11ed-869b-9b2970bf38d4",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "What is Availability?",
+                "* Availability = uptime = fraction of time that a service is working correctly<br>&nbsp; &nbsp; * \"Two Nines\" = 99% up = down 3.7 days / year<br>&nbsp; &nbsp; * \"Five Nines\" = 99.999% up = down 5.3 minutes / year<br>* **Service-Level Objective (SLO)** are the expectation of availabilities. E.g. \"99.9% of requests in a day get a response in 200 ms\"<br>* **Service Level Agreement (SLA)** Contract specifying some SLO, penalties for violation"
+            ],
+            "guid": "O=XD%,:,mb",
+            "note_model_uuid": "c7338896-9674-11ed-869b-9b2970bf38d4",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "Difference between *Failure* and *Fault* and *Fault tolerance*",
+                "* **Failure**: System as a whole is not working<br>* **Fault**: Some part of the system is not working (e.g. Node fault, Network fault, ...)<br>* **Fault tolerance** System as a whole continues working, despite faults (up to some maximum number of faults)<br><br>*Single Point of Failure (SPOF)*:&nbsp;<br>* Node / network link whose fault leads to failure<br><br>Fault tolerance also useful for software updates: Update (Reboot) one node at a time while continuing to serve users<br>"
+            ],
+            "guid": "KU2n-Z!q=1",
+            "note_model_uuid": "c7338896-9674-11ed-869b-9b2970bf38d4",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "RPC in enterprise systems",
+                "**Service oriented architecture** (SOA) / \"microservices\"<br>* Splitting large software apps into multiple services (on multiple nodes) communicating via RPC to look the same as a local function call<br>* Different services in different languages"
+            ],
+            "guid": "oDRs(a7BY7",
+            "note_model_uuid": "c7338896-9674-11ed-869b-9b2970bf38d4",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "Two generals Problem (Romeo and Juliet Problem)",
+                "Problem: Army 1 and army 2 win iff both attack at the same time<br>* Army 1 sends lots of messages to increase probability that one will get through -&gt; If all lost, army 1 attacks alone and dies<br>* Army 1 only attacks if they received a response from army 2 -&gt; If response gets lost, army 2 attacks alone and dies<br><br>In online shopping the payment can be refunded -&gt; **solveable**"
+            ],
+            "guid": "sOwf{XpFwy",
+            "note_model_uuid": "c7338896-9674-11ed-869b-9b2970bf38d4",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "The Byzantine generals problem",
+                "* Each general is either *malicious* or *honest*<br>* Up to $f$ generals might be malicious, unkown who<br>* Malicious generals may collaborate<br>* Host generals must agree on a plan<br><br>Theorem: Need $3f + 1$ generals to tolerate $f$ malicous generals (i.e. $ &lt; 1/3$ may be malicious)<br>Cryptography (digital signatures) helps - problem remains hard"
+            ],
+            "guid": "jt&(sgBDlz",
+            "note_model_uuid": "c7338896-9674-11ed-869b-9b2970bf38d4",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "3 Assumptions in a System Model",
+                "<ol><li>Network behaviour (e.g. message loss)</li><li>&nbsp;Node behavior (e.g. crashes)</li><li>&nbsp;Timing behavior (e.g. latency)</li></ol><div>Choice of models for each part</div>"
+            ],
+            "guid": "hM_tvV%to^",
+            "note_model_uuid": "c7338896-9674-11ed-869b-9b2970bf38d4",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "System Model: Network Behaviour",
+                "Assume bidirectional **point-to-point** communication between two nodes with one of<br>* **Reliable** (perfect) links:<br>&nbsp; &nbsp; &nbsp;* A message is received if and only if it is sent. Message may be reordered.<br>* **Fair-loss** links:<br>&nbsp; &nbsp; * Messages may be lost, duplicated, or reordered. If you keep retrying, a message eventually gets through<br>&nbsp; &nbsp; * Can achieve *reliable links* with retry + dedup<br>* **Arbitrary** links (active adversary):<br>&nbsp; &nbsp; * A malicious adversary may interfere with messages (eavesdrop, modify, drop, spoof, replay)<br>&nbsp; &nbsp; * Can achieve *fair-loss* with TLS (adversary might still drop messages)<br><br>**Network partition**: Some links dropping / delaying all messages for extended period of time -&gt; Will be healed eventually"
+            ],
+            "guid": "Hrbeo}Zfcd",
+            "note_model_uuid": "c7338896-9674-11ed-869b-9b2970bf38d4",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "System Model: Node Behavior",
+                "Each node executes a specified algorithm, assuming one of the following<br>* **Crash-stop** (fail-stop):<br>&nbsp; &nbsp; * A node is faulty if it crashes (at any moment). Stops executing forever after crash<br>* **Crash-recovery** (fail-recovery):<br>&nbsp; &nbsp; * A node may crash at any moment, losing its in-memory state. Resumes executing sometime later. Data stored on disk survies the crash.<br>* **Byzantine** (fail-arbitrary):<br>&nbsp; &nbsp; * A node is faulty if it deviates from the algorithm. Faulty noes may do anything, including crashing or malicious behavior<br><br>None faulty node is called **correct**."
+            ],
+            "guid": "kd(7Wf&WfY",
+            "note_model_uuid": "c7338896-9674-11ed-869b-9b2970bf38d4",
+            "tags": []
+        }
+    ],
+    "reviewLimit": null,
+    "reviewLimitToday": null
+}
