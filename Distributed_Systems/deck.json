@@ -67,11 +67,26 @@
         "_markdown-it-mark.js",
         "_markdown-it.min.js",
         "_mhchem.js",
+        "paste-002c0734483579f8e42307909c64408d35336143.png",
+        "paste-1be856e75645f878f5db293d99f89436c219bf9d.png",
         "paste-1f139cb3a74b90d52e2d07906be33fdaa99b1cab.png",
         "paste-1ff7a07991d757442d4be8610a27f4ec683918fb.png",
+        "paste-2109ebd934fcb9ea37795953321fdd4b827ceb6e.png",
+        "paste-2cfd17e5377cabda9423b2d0858caa9e4711030a.png",
+        "paste-4bc52a5f35e32ef2ebb2d666800b20bdf7f32f56.png",
+        "paste-586fd7bf3f888493774cd50d789c5b77f43a75e7.png",
+        "paste-61069a0b9eecabc0c128a5beb7794f83baaedc90.png",
+        "paste-6e183d5fdb077a95d5169a725ccbcf14cc87045f.png",
+        "paste-709ea802c42caee3f52ca008967688d5cc3a7ef0.png",
+        "paste-70b5e439644a61f84fafed8bd67490a050b6684f.png",
+        "paste-9262f929bfdf9d3424459b25546dbb54297a706a.png",
         "paste-96f3d1a9d93b985186d6ed5e318cf694d22d044a.png",
         "paste-a3d8032f3d07e35378483af681dccf2ed95c6eb0.png",
         "paste-a449c7964b3f1b87a15280dfd50d410835ab6815.png",
+        "paste-ab349eda6b3731cd48f895ffbc26395c023b4e4f.png",
+        "paste-b4945935b83c3e2e397de90da9d34746f767a9c0.png",
+        "paste-c7911292a674cf402eccf31abfd281a63d347365.png",
+        "paste-d6705dac928b61b20539fb650fcdc31a24c3a078.png",
         "paste-d83000c31f9eb67401b16e2e360de7f3ed953693.png",
         "paste-eb96ed52c06b66d0bc655f18d14ec6d955509db0.png",
         "pig architecture.png"
@@ -465,6 +480,186 @@
                 "Assume one of the following for network and nodes:<br>* **Synchronous**<br>&nbsp; &nbsp; * Message latency no greater than a known upper bound. Nodes execute algorithm at a known speed<br>* **Partially synchronous**<br>&nbsp; &nbsp; * System is asynchronous for some finite periods of time, synchronous otherwise<br>* **Asynchronous**<br>&nbsp; &nbsp; * Messages can be delayed arbitrarily. Nodes can pause execution arbitrarily. No timing guarantees at all."
             ],
             "guid": "uGeDz$30l|",
+            "note_model_uuid": "c7338896-9674-11ed-869b-9b2970bf38d4",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "What is a failure detector? How does a typical implementation look like and what are their problems?",
+                "* Failure detector is an algorithm, which detects whether another node is faulty<br>* **Perfect** failure detector: Labels a node as faulty iff it has crashed<br>* Typical implementation: Send heart beats, await response, label node as crashed if no response within some timeout<br>* Problem: No difference between crashed, unresponsive node, lost or delayed message<br><br>A **perfect** failure detector only exists in a *synchronous crash-stop* system with *reliable links*<br><br>**Eventually** perfect failure detector<br>* May *temporarily* label a node as crashed, even if it is correct<br>* May *temporarily* label a node as correct, even if it is crashed<br>* But eventually, labels a node as crashed iff it has crashed<br><br>Detection is not instantaneous, and we may have timeouts."
+            ],
+            "guid": "f{`@0L#Sk:",
+            "note_model_uuid": "c7338896-9674-11ed-869b-9b2970bf38d4",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "Difference between Physical and Logical clocks",
+                "Physical clock counts the number of seconds elapsed, logical clocks the number of events (e.g. messages sent)"
+            ],
+            "guid": "po2V@nYRJ_",
+            "note_model_uuid": "c7338896-9674-11ed-869b-9b2970bf38d4",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "What is a drift in clocks?",
+                "Drif is the deviation over time of a clock. It is measured in **parts per million** (ppm)<br><br>E.g. 1ppm = 1 ms / s = 86 ms / day = 32 s / year<br><br>Most computer clocks are correct within $\\approx 50ppm$"
+            ],
+            "guid": "Og<PK^C6DZ",
+            "note_model_uuid": "c7338896-9674-11ed-869b-9b2970bf38d4",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "Who do Computers track the time?",
+                "* Run with a quartz clock locally the physical time.&nbsp;<br>* Due to clock drift, the error gradually increases.&nbsp;<br>* Solution: Synchronise the current time periodically with a server with more accurate time source (atomic clock / GPS)"
+            ],
+            "guid": "za9ThWKkMg",
+            "note_model_uuid": "c7338896-9674-11ed-869b-9b2970bf38d4",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "What is the clock skew?",
+                "Difference between two clocks at a point in time"
+            ],
+            "guid": "cJ$ar<9~rx",
+            "note_model_uuid": "c7338896-9674-11ed-869b-9b2970bf38d4",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "Two protocols for Clock synchronisation",
+                "* Network Time Protocol (NTP)<br>* Precision Time Protocol (PTP)"
+            ],
+            "guid": "bW5l!Qky69",
+            "note_model_uuid": "c7338896-9674-11ed-869b-9b2970bf38d4",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "How does the Network Time Protocol (NTP) work?",
+                "Hierachy of clock servers arrange into **strate**<br>1. Stratum 0: Atomic clock or GPS receiver<br>2. Synced directly with stratum 0<br>3. Servers that sync with stratum 1<br><br>* May contact multiple servers, discard outliers, average rest<br>* Make multiple requets to same server to reduce random error due to network latency&nbsp;<br>&nbsp; * Reduces skew to few milliseconds in good network conditions, can be much worse<br><br><img src=\"paste-4bc52a5f35e32ef2ebb2d666800b20bdf7f32f56.png\"><br><img src=\"paste-709ea802c42caee3f52ca008967688d5cc3a7ef0.png\">"
+            ],
+            "guid": "v`&Qf_]*S/",
+            "note_model_uuid": "c7338896-9674-11ed-869b-9b2970bf38d4",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "What are logical clocks designed for and name 2 types of them.",
+                "They are designed to capure causaul dependencies:<br>$ (e_1 \\rightarrow e_2) \\Rightarrow (T(e_1) &lt; T(e_2))$<br><br>Two types:<br>* Lamport clocks<br>* Vector clocks"
+            ],
+            "guid": "bl_1$y>X<q",
+            "note_model_uuid": "c7338896-9674-11ed-869b-9b2970bf38d4",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "Explain the Lamport Clock algorithm",
+                "<img src=\"paste-2109ebd934fcb9ea37795953321fdd4b827ceb6e.png\"><br><img src=\"paste-70b5e439644a61f84fafed8bd67490a050b6684f.png\"><br><img src=\"paste-6e183d5fdb077a95d5169a725ccbcf14cc87045f.png\">"
+            ],
+            "guid": "u@)>7BjF%:",
+            "note_model_uuid": "c7338896-9674-11ed-869b-9b2970bf38d4",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "How do Vector clocks work?",
+                "<img src=\"paste-586fd7bf3f888493774cd50d789c5b77f43a75e7.png\"><br><img src=\"paste-2cfd17e5377cabda9423b2d0858caa9e4711030a.png\"><br><img src=\"paste-61069a0b9eecabc0c128a5beb7794f83baaedc90.png\"><br><img src=\"paste-1be856e75645f878f5db293d99f89436c219bf9d.png\">"
+            ],
+            "guid": "Q/+A1$~/D:",
+            "note_model_uuid": "c7338896-9674-11ed-869b-9b2970bf38d4",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "What are Broadcast protocols?",
+                "Broadcast (multicast) is group communication<br>* One node sends message, all nodes in group deliver it<br>* Group members are fixed or dynamic<br>* If one node is faulty, other members carry on<br><br>Can be **best-effort** (may drop messages) or **reliable** (non-faulty nodes deliver every message by retransmitting dropped ones).&nbsp;<br>Has async / partially sync timing model: **No upper bound** on message latency"
+            ],
+            "guid": "lL})4Hwpul",
+            "note_model_uuid": "c7338896-9674-11ed-869b-9b2970bf38d4",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "What forms of reliable broadcast exist?",
+                "# FIFO Broadcast<br>If $m_1$ and $m_2$ are broadcast by the same node, and $broadcast(m_1) \\rightarrow broadcast(m_2)$, then $m_1$ must be delivered before $m_2$<br><br># Causal Broadcast<br>If $broadcast(m_1) \\rightarrow broadcast(m_2)$ then $m_1$ must be delivered before $m_2$<br><br># Total Order Broadcast<br>If $m_1$ is delivered before $m_2$ on one node, then $m_1$ must be delivered before $m_2$ on **all nodes**.<br><br># FIFO-Total Order Broadcast<br>Combination of FIFO broadcast and total order broadcast.<br><br><img src=\"paste-b4945935b83c3e2e397de90da9d34746f767a9c0.png\">"
+            ],
+            "guid": "Nvki?*)J|g",
+            "note_model_uuid": "c7338896-9674-11ed-869b-9b2970bf38d4",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "FIFO Broadcast",
+                "<img src=\"paste-002c0734483579f8e42307909c64408d35336143.png\">"
+            ],
+            "guid": "AnDv6/[$Yz",
+            "note_model_uuid": "c7338896-9674-11ed-869b-9b2970bf38d4",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "Casual Broadcast",
+                "<img src=\"paste-d6705dac928b61b20539fb650fcdc31a24c3a078.png\"><br><img src=\"paste-9262f929bfdf9d3424459b25546dbb54297a706a.png\">"
+            ],
+            "guid": "ioK9zAa`.x",
+            "note_model_uuid": "c7338896-9674-11ed-869b-9b2970bf38d4",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "Total Order Broadcast",
+                "<img src=\"paste-c7911292a674cf402eccf31abfd281a63d347365.png\"><br><img src=\"paste-ab349eda6b3731cd48f895ffbc26395c023b4e4f.png\">"
+            ],
+            "guid": "G8:M2!7Sip",
+            "note_model_uuid": "c7338896-9674-11ed-869b-9b2970bf38d4",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "How does Eager reliable broadcast work?",
+                "* Send message. First time a node receives a message, re-broadcast it to each other node (via reliable links)<br>* Problem: It's reliable but up to $\\mathcal{O}(n^2)$ messages"
+            ],
+            "guid": "n%uOnMI)%3",
+            "note_model_uuid": "c7338896-9674-11ed-869b-9b2970bf38d4",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "How does the Gossip Protocol work?",
+                "* When a node receives a message for the first time, forward it to 3 other nodes, chosen randomly.<br>* Useful for broadcasting to large number of nodes<br>* Eventually reaches all nodes (with high probability)"
+            ],
+            "guid": "Ra*Nr4$xG!",
+            "note_model_uuid": "c7338896-9674-11ed-869b-9b2970bf38d4",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "Name and explain two Total Order Broadcast algorithms",
+                "# **Single leader** approach<br>* One node is a leader (sequencer)<br>* To broadcast message, send it to the leader. Leader broadcasts it with FIFO broadcast<br>* Problem: Leader crashes results in no more messages delivered<br>* Changing the leader safely is difficult<br><br># **Lamport clocks** approach<br>* Attach Lamport timestamp to every message<br>* Deliver message in total order of timestamps<br>* Problem: How do you know if you have seen all messages with timestamp $&lt; T$?&nbsp;<br>&nbsp; * Need to use FIFO links and wait for message with timestamp $\\geq T$ from *every* node"
+            ],
+            "guid": "M*IU1>/O*x",
             "note_model_uuid": "c7338896-9674-11ed-869b-9b2970bf38d4",
             "tags": []
         }
