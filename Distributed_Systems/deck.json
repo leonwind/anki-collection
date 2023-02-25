@@ -267,7 +267,7 @@
             "__type__": "Note",
             "fields": [
                 "What is Pig Latin?",
-                "Distributed dataflow queries<br>Pig Latin = SQL-kind queries + Distributed executin"
+                "Distributed dataflow queries<br>Pig Latin = SQL-kind queries + Distributed execution"
             ],
             "guid": "Ew>}*4//5U",
             "note_model_uuid": "c7338896-9674-11ed-869b-9b2970bf38d4",
@@ -287,7 +287,7 @@
             "__type__": "Note",
             "fields": [
                 "Pig Compilation Process",
-                "Logical Plan -&gt; Physical Plan -&gt; MapReduce Plan<br><br><img src=\"paste-a3d8032f3d07e35378483af681dccf2ed95c6eb0.png\"><br><img src=\"paste-1ff7a07991d757442d4be8610a27f4ec683918fb.png\"><br><img src=\"paste-eb96ed52c06b66d0bc655f18d14ec6d955509db0.png\">"
+                "Pig Latin -&gt; Logical Plan -&gt; Physical Plan -&gt; MapReduce Plan<br><br><img src=\"paste-a3d8032f3d07e35378483af681dccf2ed95c6eb0.png\"><br><img src=\"paste-1ff7a07991d757442d4be8610a27f4ec683918fb.png\"><br><img src=\"paste-eb96ed52c06b66d0bc655f18d14ec6d955509db0.png\">"
             ],
             "guid": "C44:&c6?]j",
             "note_model_uuid": "c7338896-9674-11ed-869b-9b2970bf38d4",
@@ -307,7 +307,7 @@
             "__type__": "Note",
             "fields": [
                 "Problem with locking?",
-                "A process an dhold the resource indefinitely if it crashes / has network failure"
+                "A process an hold the resource indefinitely if it crashes / has network failure"
             ],
             "guid": "dq_nqh?Z{E",
             "note_model_uuid": "c7338896-9674-11ed-869b-9b2970bf38d4",
@@ -317,7 +317,7 @@
             "__type__": "Note",
             "fields": [
                 "What kind of Lease Variants exist?",
-                "# Read Lease<br>* Allows clients to cache clean data<br>* **Guarantee**: No other client is modifying data<br><br># Write lease<br>* Client can locally modify the data<br>* **Guarantee**: No other client has data caches"
+                "# Read Lease<br>* Allows clients to cache clean data<br>* **Guarantee**: No other client is modifying data<br><br># Write Lease<br>* Client can locally modify the data<br>* **Guarantee**: No other client has data caches"
             ],
             "guid": "Fxy#CFMGo]",
             "note_model_uuid": "c7338896-9674-11ed-869b-9b2970bf38d4",
@@ -346,7 +346,7 @@
         {
             "__type__": "Note",
             "fields": [
-                "What is a issue with leases?",
+                "What is an issue with leases?",
                 "Leases depend on well-behaved clocks. Inconsistencies if clock speeds between lease grantor and holder are mismatched"
             ],
             "guid": "$%wt#v!%|",
@@ -467,7 +467,7 @@
             "__type__": "Note",
             "fields": [
                 "System Model: Node Behavior",
-                "Each node executes a specified algorithm, assuming one of the following<br>* **Crash-stop** (fail-stop):<br>&nbsp; &nbsp; * A node is faulty if it crashes (at any moment). Stops executing forever after crash<br>* **Crash-recovery** (fail-recovery):<br>&nbsp; &nbsp; * A node may crash at any moment, losing its in-memory state. Resumes executing sometime later. Data stored on disk survies the crash.<br>* **Byzantine** (fail-arbitrary):<br>&nbsp; &nbsp; * A node is faulty if it deviates from the algorithm. Faulty noes may do anything, including crashing or malicious behavior<br><br>None faulty node is called **correct**."
+                "Each node executes a specified algorithm, assuming one of the following<br>* **Crash-stop** (fail-stop):<br>&nbsp; &nbsp; * A node is faulty if it crashes (at any moment). Stops executing forever after crash<br>* **Crash-recovery** (fail-recovery):<br>&nbsp; &nbsp; * A node may crash at any moment, losing its in-memory state. Resumes executing sometime later. Data stored on disk survies the crash.<br>* **Byzantine** (fail-arbitrary):<br>&nbsp; &nbsp; * A node is faulty if it deviates from the algorithm. Faulty nodes may do anything, including crashing or malicious behavior<br><br>None faulty node is called **correct**."
             ],
             "guid": "kd(7Wf&WfY",
             "note_model_uuid": "c7338896-9674-11ed-869b-9b2970bf38d4",
@@ -516,7 +516,7 @@
         {
             "__type__": "Note",
             "fields": [
-                "Who do Computers track the time?",
+                "How do Computers track the time?",
                 "* Run with a quartz clock locally the physical time.&nbsp;<br>* Due to clock drift, the error gradually increases.&nbsp;<br>* Solution: Synchronise the current time periodically with a server with more accurate time source (atomic clock / GPS)"
             ],
             "guid": "za9ThWKkMg",
@@ -660,6 +660,106 @@
                 "# **Single leader** approach<br>* One node is a leader (sequencer)<br>* To broadcast message, send it to the leader. Leader broadcasts it with FIFO broadcast<br>* Problem: Leader crashes results in no more messages delivered<br>* Changing the leader safely is difficult<br><br># **Lamport clocks** approach<br>* Attach Lamport timestamp to every message<br>* Deliver message in total order of timestamps<br>* Problem: How do you know if you have seen all messages with timestamp $&lt; T$?&nbsp;<br>&nbsp; * Need to use FIFO links and wait for message with timestamp $\\geq T$ from *every* node"
             ],
             "guid": "M*IU1>/O*x",
+            "note_model_uuid": "c7338896-9674-11ed-869b-9b2970bf38d4",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "Difference between Replication and RAID?",
+                "* RAID has a single controller. Each replica node acts independently<br>* Replicas can be distributed around the world, near users&nbsp;"
+            ],
+            "guid": "y|A~oBei5f",
+            "note_model_uuid": "c7338896-9674-11ed-869b-9b2970bf38d4",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "What is a idempotent function?",
+                "If $f(x) = f(f(x))$<br><ul><li><b>Not idempotent</b>: $f(likeCount) = likeCount + 1$<br></li><li><b>Idempotent:&nbsp;</b>$f(likeSet) = likeSet \\cup \\{userID\\}$<br></li></ul>"
+            ],
+            "guid": "vFkuJ_F%-",
+            "note_model_uuid": "c7338896-9674-11ed-869b-9b2970bf38d4",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "Name 3 retry behaviors",
+                "<ol><li><b>At most once semantics:</b>&nbsp;Send request, don't retry, update may not happen<br></li><li><b>At lesat once semantics:</b>&nbsp;Retry request until acknowledged, may repeat update<br></li><li><b>Exactly once semantics:</b>&nbsp;Retry + idempotence or depulication<br></li></ol>"
+            ],
+            "guid": "r?=-OWF#Jh",
+            "note_model_uuid": "c7338896-9674-11ed-869b-9b2970bf38d4",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "What are 2 common approaches for concurrent writes by different clients?",
+                "<div><ul><li><b>Last Writer wins (LWW) register:</b>&nbsp;Use timestamps with total order (e.g. Lamport lock). Keep $v_2$ and discard $v_1$ if $t_2 &gt; t_1$.&nbsp;Note:&nbsp;<b>Data loss</b><br></li><li><b>Multi-value register:</b>&nbsp;Use timestamps with partial order (e.g. vector clock). $v_2$ replaces $v_1$ if $t_2 &gt; t_1$; preserve both $\\{v_1, v_2\\}$ if $t_1 || t_2$</li></ul></div>"
+            ],
+            "guid": "xB|3V?V4Ml",
+            "note_model_uuid": "c7338896-9674-11ed-869b-9b2970bf38d4",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "What is the main inequality for read and write quorums and what are the typical equations?",
+                "<ul><li>Need to have $r + w &gt; n$ for $replicas$&nbsp;</li><li>Typically we have $r = w = \\frac{n + 1}{2}$ for $n = 3,5,7,...$ to reach a majority</li><li>Then we can tolerate $n - r$ unavailable replicas</li></ul>"
+            ],
+            "guid": "Jfbm^maro1",
+            "note_model_uuid": "c7338896-9674-11ed-869b-9b2970bf38d4",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "How does 2PC work? What happens if Coordinator fails?",
+                "2 Phase Commit works the following:<br><ol><li>Prepare phase: In this phase, the coordinator sends a \"prepare\" message to all participants, asking them to vote either \"yes\" or \"no\" on whether they are ready to commit the transaction.</li><li><div>Commit/Abort phase: If all participants vote \"yes,\" the coordinator sends a \"commit\" message, and all participants execute the transaction. If any participant votes \"no,\" the coordinator sends an \"abort\" message and all participants abort the transaction.</div></li></ol><div>This protocol ensures that all participants either commit the transaction or abort it, but never end up in an inconsistent state. It provides atomicity, a crucial property of database transactions.<br></div><div><br></div><div>If the coordinator fails, 2PC blocks until a human setup a new coordinator / the coordinator recovers.</div>"
+            ],
+            "guid": "w1YEPY=Izm",
+            "note_model_uuid": "c7338896-9674-11ed-869b-9b2970bf38d4",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "What is&nbsp;Linearizability?",
+                "Its consistency -&gt; All operations need to behave as if executed on a single copy<br>"
+            ],
+            "guid": "KJT]?@HAn>",
+            "note_model_uuid": "c7338896-9674-11ed-869b-9b2970bf38d4",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "What is eventual consistency?",
+                "Eventual consistency means that if there are no more updates, **eventually** all replicas will be in the same state"
+            ],
+            "guid": "QktLp>#5JS",
+            "note_model_uuid": "c7338896-9674-11ed-869b-9b2970bf38d4",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "What are the trade offs for linearizability?",
+                "# Advantages<br>* Makes distributed system behave as it if were non-distributed<br>* Simple for applications to use<br><br># Downsides<br>* Performance cost: Lots of messages + waiting for responses<br>* Scalability limits: Leader can be a bottleneck<br>* Availability problems: If you can't contact a quorum of nodes, system is unavailable"
+            ],
+            "guid": "e!duPlV8x&",
+            "note_model_uuid": "c7338896-9674-11ed-869b-9b2970bf38d4",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "What is strong eventual consistency?",
+                "* Eventual delivery: Every update made to one non-faulty replica is eventual processed by ever non-faulty replica<br>* Convergence: Any two replicas that have processed the same set upf updates are in the same state<br><br>Properties:<br>* Does not require waiting for network communiation<br>* Casual broadcats (or weaker) for updates"
+            ],
+            "guid": "GQ]sK^L+-9",
             "note_model_uuid": "c7338896-9674-11ed-869b-9b2970bf38d4",
             "tags": []
         }
