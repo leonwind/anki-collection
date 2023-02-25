@@ -1,0 +1,901 @@
+{
+    "__type__": "Deck",
+    "children": [],
+    "crowdanki_uuid": "2e3832fa-b554-11ed-81c0-6bc22fb17383",
+    "deck_config_uuid": "c7336802-9674-11ed-869b-9b2970bf38d4",
+    "deck_configurations": [
+        {
+            "__type__": "DeckConfig",
+            "autoplay": true,
+            "buryInterdayLearning": false,
+            "crowdanki_uuid": "c7336802-9674-11ed-869b-9b2970bf38d4",
+            "dyn": false,
+            "interdayLearningMix": 0,
+            "lapse": {
+                "delays": [
+                    10.0
+                ],
+                "leechAction": 1,
+                "leechFails": 8,
+                "minInt": 1,
+                "mult": 0.0
+            },
+            "maxTaken": 60,
+            "name": "Default",
+            "new": {
+                "bury": false,
+                "delays": [
+                    1.0,
+                    10.0
+                ],
+                "initialFactor": 2500,
+                "ints": [
+                    1,
+                    4,
+                    0
+                ],
+                "order": 1,
+                "perDay": 20
+            },
+            "newGatherPriority": 0,
+            "newMix": 0,
+            "newPerDayMinimum": 0,
+            "newSortOrder": 0,
+            "replayq": true,
+            "rev": {
+                "bury": false,
+                "ease4": 1.3,
+                "hardFactor": 1.2,
+                "ivlFct": 1.0,
+                "maxIvl": 36500,
+                "perDay": 200
+            },
+            "reviewOrder": 0,
+            "timer": 0
+        }
+    ],
+    "desc": "",
+    "dyn": 0,
+    "extendNew": 0,
+    "extendRev": 0,
+    "media_files": [
+        "_auto-render.js",
+        "_highlight.css",
+        "_highlight.js",
+        "_katex.css",
+        "_katex.min.js",
+        "_markdown-it-mark.js",
+        "_markdown-it.min.js",
+        "_mhchem.js",
+        "alibaba-polardb.png",
+        "aurora-storage-service.png",
+        "aws-aurora.png",
+        "azure-socrates-xlog.png",
+        "azure-socrates.png",
+        "compute-memory-storage-arch.png",
+        "in-memory-query-2ntao.max-700x700.PNG",
+        "minimum-system-model-requirments.png",
+        "oltp-cloud.png",
+        "polaris-arch.png",
+        "scheduler-policies.png",
+        "snowflake-architecture.png"
+    ],
+    "name": "Cloud-Based Data Processing",
+    "note_models": [
+        {
+            "__type__": "NoteModel",
+            "crowdanki_uuid": "c7338896-9674-11ed-869b-9b2970bf38d4",
+            "css": "\n\n.card {\n  font-family: arial;\n  font-size: 20px;\n  color: black;\n  background-color: white;\n}\ntable, th, td {\n\tborder: 1px solid black;\n\tborder-collapse: collapse;\n}\n#front, #back, #extra {\n\tvisibility: hidden;\n}\npre code {\n  background-color: #eee;\n  border: 1px solid #999;\n  display: block;\n  padding: 20px;\n  overflow: auto;\n}\n",
+            "flds": [
+                {
+                    "description": "",
+                    "font": "Arial",
+                    "name": "Front",
+                    "ord": 0,
+                    "rtl": false,
+                    "size": 20,
+                    "sticky": false
+                },
+                {
+                    "description": "",
+                    "font": "Arial",
+                    "name": "Back",
+                    "ord": 1,
+                    "rtl": false,
+                    "size": 20,
+                    "sticky": false
+                }
+            ],
+            "latexPost": "\\end{document}",
+            "latexPre": "\\documentclass[12pt]{article}\n\\special{papersize=3in,5in}\n\\usepackage[utf8]{inputenc}\n\\usepackage{amssymb,amsmath}\n\\pagestyle{empty}\n\\setlength{\\parindent}{0in}\n\\begin{document}\n",
+            "latexsvg": false,
+            "name": "KaTeX and Markdown Basic",
+            "req": [
+                [
+                    0,
+                    "any",
+                    [
+                        0
+                    ]
+                ]
+            ],
+            "sortf": 0,
+            "tmpls": [
+                {
+                    "afmt": "\n\n<div id=\"front\"><pre>{{Front}}</pre></div>\n\n<hr id=answer>\n\n<div id=\"back\"><pre>{{Back}}</pre></div>\n\n<script>\n\tvar getResources = [\n\t\tgetCSS(\"_katex.css\", \"https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css\"),\n\t\tgetCSS(\"_highlight.css\", \"https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.0.1/styles/default.min.css\"),\n\t\tgetScript(\"_highlight.js\", \"https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.0.1/highlight.min.js\"),\n\t\tgetScript(\"_katex.min.js\", \"https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.js\"),\n\t\tgetScript(\"_auto-render.js\", \"https://cdn.jsdelivr.net/gh/Jwrede/Anki-KaTeX-Markdown/auto-render-cdn.js\"),\n\t\tgetScript(\"_markdown-it.min.js\", \"https://cdnjs.cloudflare.com/ajax/libs/markdown-it/12.0.4/markdown-it.min.js\"),\n\t\tgetScript(\"_markdown-it-mark.js\",\"https://cdn.jsdelivr.net/gh/Jwrede/Anki-KaTeX-Markdown/_markdown-it-mark.js\")\n\t];\n        Promise.all(getResources).then(() => getScript(\"_mhchem.js\", \"https://cdn.jsdelivr.net/npm/katex@0.13.11/dist/contrib/mhchem.min.js\")).then(render).catch(show);\n\t\n\n\tfunction getScript(path, altURL) {\n\t\treturn new Promise((resolve, reject) => {\n\t\t\tlet script = document.createElement(\"script\");\n\t\t\tscript.onload = resolve;\n\t\t\tscript.onerror = function() {\n\t\t\t\tlet script_online = document.createElement(\"script\");\n\t\t\t\tscript_online.onload = resolve;\n\t\t\t\tscript_online.onerror = reject;\n\t\t\t\tscript_online.src = altURL;\n\t\t\t\tdocument.head.appendChild(script_online);\n\t\t\t}\n\t\t\tscript.src = path;\n\t\t\tdocument.head.appendChild(script);\n\t\t})\n\t}\n\n\tfunction getCSS(path, altURL) {\n\t\treturn new Promise((resolve, reject) => {\n\t\t\tvar css = document.createElement('link');\n\t\t\tcss.setAttribute('rel', 'stylesheet');\n\t\t\tcss.type = 'text/css';\n\t\t\tcss.onload = resolve;\n\t\t\tcss.onerror = function() {\n\t\t\t\tvar css_online = document.createElement('link');\n\t\t\t\tcss_online.setAttribute('rel', 'stylesheet');\n\t\t\t\tcss_online.type = 'text/css';\n\t\t\t\tcss_online.onload = resolve;\n\t\t\t\tcss_online.onerror = reject;\n\t\t\t\tcss_online.href = altURL;\n\t\t\t\tdocument.head.appendChild(css_online);\n\t\t\t}\n\t\t\tcss.href = path;\n\t\t\tdocument.head.appendChild(css);\n\t\t});\n\t}\n\n\tfunction render() {\n\t\trenderMath(\"front\");\n\t\tmarkdown(\"front\");\n\t\trenderMath(\"back\");\n\t\tmarkdown(\"back\");\n\t\tshow();\n\t}\n\n\tfunction show() {\n\t\tdocument.getElementById(\"front\").style.visibility = \"visible\";\n\t\tdocument.getElementById(\"back\").style.visibility = \"visible\";\n\t}\n\n\n\tfunction renderMath(ID) {\n\t\tlet text = document.getElementById(ID).innerHTML;\n\t\ttext = replaceInString(text);\n\t\tdocument.getElementById(ID).textContent = text;\n\t\trenderMathInElement(document.getElementById(ID), {\n\t\t\tdelimiters:  [\n  \t\t\t\t{left: \"$$\", right: \"$$\", display: true},\n  \t\t\t\t{left: \"$\", right: \"$\", display: false}\n\t\t\t],\n                        throwOnError : false\n\t\t});\n\t}\n\tfunction markdown(ID) {\n\t\tlet md = new markdownit({typographer: true, html:true, highlight: function (str, lang) {\n                            if (lang && hljs.getLanguage(lang)) {\n                                try {\n                                    return hljs.highlight(str, { language: lang }).value;\n                                } catch (__) {}\n                            }\n\n                            return ''; // use external default escaping\n                        }}).use(markdownItMark);\n\t\tlet text = replaceHTMLElementsInString(document.getElementById(ID).innerHTML);\n\t\ttext = md.render(text);\n\t\tdocument.getElementById(ID).innerHTML = text.replace(/&lt;\\/span&gt;/gi,\"\\\\\");\n\t}\n\tfunction replaceInString(str) {\n\t\tstr = str.replace(/<[\\/]?pre[^>]*>/gi, \"\");\n\t\tstr = str.replace(/<br\\s*[\\/]?[^>]*>/gi, \"\\n\");\n\t\tstr = str.replace(/<div[^>]*>/gi, \"\\n\");\n\t\t// Thanks Graham A!\n\t\tstr = str.replace(/<[\\/]?span[^>]*>/gi, \"\")\n\t\tstr.replace(/<\\/div[^>]*>/g, \"\\n\");\n\t\treturn replaceHTMLElementsInString(str);\n\t}\n\n\tfunction replaceHTMLElementsInString(str) {\n\t\tstr = str.replace(/&nbsp;/gi, \" \");\n\t\tstr = str.replace(/&tab;/gi, \"\t\");\n\t\tstr = str.replace(/&gt;/gi, \">\");\n\t\tstr = str.replace(/&lt;/gi, \"<\");\n\t\treturn str.replace(/&amp;/gi, \"&\");\n\t}\n</script>\n",
+                    "bafmt": "",
+                    "bfont": "",
+                    "bqfmt": "",
+                    "bsize": 0,
+                    "did": null,
+                    "name": "KaTeX and Markdown Basic",
+                    "ord": 0,
+                    "qfmt": "\n\n<div id=\"front\"><pre>{{Front}}</pre></div>\n\n<script>\n\tvar getResources = [\n\t\tgetCSS(\"_katex.css\", \"https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css\"),\n\t\tgetCSS(\"_highlight.css\", \"https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.0.1/styles/default.min.css\"),\n\t\tgetScript(\"_highlight.js\", \"https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.0.1/highlight.min.js\"),\n\t\tgetScript(\"_katex.min.js\", \"https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.js\"),\n\t\tgetScript(\"_auto-render.js\", \"https://cdn.jsdelivr.net/gh/Jwrede/Anki-KaTeX-Markdown/auto-render-cdn.js\"),\n\t\tgetScript(\"_markdown-it.min.js\", \"https://cdnjs.cloudflare.com/ajax/libs/markdown-it/12.0.4/markdown-it.min.js\"),\n                getScript(\"_markdown-it-mark.js\",\"https://cdn.jsdelivr.net/gh/Jwrede/Anki-KaTeX-Markdown/_markdown-it-mark.js\")\n\t];\n        Promise.all(getResources).then(() => getScript(\"_mhchem.js\", \"https://cdn.jsdelivr.net/npm/katex@0.13.11/dist/contrib/mhchem.min.js\")).then(render).catch(show);\n\t\n\n\tfunction getScript(path, altURL) {\n\t\treturn new Promise((resolve, reject) => {\n\t\t\tlet script = document.createElement(\"script\");\n\t\t\tscript.onload = resolve;\n\t\t\tscript.onerror = function() {\n\t\t\t\tlet script_online = document.createElement(\"script\");\n\t\t\t\tscript_online.onload = resolve;\n\t\t\t\tscript_online.onerror = reject;\n\t\t\t\tscript_online.src = altURL;\n\t\t\t\tdocument.head.appendChild(script_online);\n\t\t\t}\n\t\t\tscript.src = path;\n\t\t\tdocument.head.appendChild(script);\n\t\t})\n\t}\n\n\tfunction getCSS(path, altURL) {\n\t\treturn new Promise((resolve, reject) => {\n\t\t\tvar css = document.createElement('link');\n\t\t\tcss.setAttribute('rel', 'stylesheet');\n\t\t\tcss.type = 'text/css';\n\t\t\tcss.onload = resolve;\n\t\t\tcss.onerror = function() {\n\t\t\t\tvar css_online = document.createElement('link');\n\t\t\t\tcss_online.setAttribute('rel', 'stylesheet');\n\t\t\t\tcss_online.type = 'text/css';\n\t\t\t\tcss_online.onload = resolve;\n\t\t\t\tcss.onerror = reject;\n\t\t\t\tcss_online.href = altURL;\n\t\t\t\tdocument.head.appendChild(css_online);\n\t\t\t}\n\t\t\tcss.href = path;\n\t\t\tdocument.head.appendChild(css);\n\t\t});\n\t}\n\n\n\tfunction render() {\n\t\trenderMath(\"front\");\n\t\tmarkdown(\"front\");\n\t\tshow();\n\t}\n\n\tfunction show() {\n\t\tdocument.getElementById(\"front\").style.visibility = \"visible\";\n\t}\n\n\tfunction renderMath(ID) {\n\t\tlet text = document.getElementById(ID).innerHTML;\n\t\ttext = replaceInString(text);\n\t\tdocument.getElementById(ID).textContent = text;\n\t\trenderMathInElement(document.getElementById(ID), {\n\t\t\tdelimiters:  [\n  \t\t\t\t{left: \"$$\", right: \"$$\", display: true},\n  \t\t\t\t{left: \"$\", right: \"$\", display: false}\n\t\t\t],\n            throwOnError : false\n\t\t});\n\t}\n\n\tfunction markdown(ID) {\n\t\tlet md = new markdownit({typographer: true, html:true, highlight: function (str, lang) {\n                            if (lang && hljs.getLanguage(lang)) {\n                                try {\n                                    return hljs.highlight(str, { language: lang }).value;\n                                } catch (__) {}\n                            }\n\n                            return ''; // use external default escaping\n                        }}).use(markdownItMark);\n\t\tlet text = replaceHTMLElementsInString(document.getElementById(ID).innerHTML);\n\t\ttext = md.render(text);\n\t\tdocument.getElementById(ID).innerHTML = text.replace(/&lt;\\/span&gt;/gi,\"\\\\\");\n\t}\n\tfunction replaceInString(str) {\n\t\tstr = str.replace(/<[\\/]?pre[^>]*>/gi, \"\");\n\t\tstr = str.replace(/<br\\s*[\\/]?[^>]*>/gi, \"\\n\");\n\t\tstr = str.replace(/<div[^>]*>/gi, \"\\n\");\n\t\t// Thanks Graham A!\n\t\tstr = str.replace(/<[\\/]?span[^>]*>/gi, \"\")\n\t\tstr.replace(/<\\/div[^>]*>/g, \"\\n\");\n\t\treturn replaceHTMLElementsInString(str);\n\t}\n\n\tfunction replaceHTMLElementsInString(str) {\n\t\tstr = str.replace(/&nbsp;/gi, \" \");\n\t\tstr = str.replace(/&tab;/gi, \"\t\");\n\t\tstr = str.replace(/&gt;/gi, \">\");\n\t\tstr = str.replace(/&lt;/gi, \"<\");\n\t\treturn str.replace(/&amp;/gi, \"&\");\n\t}\n</script>\n"
+                }
+            ],
+            "type": 0
+        }
+    ],
+    "notes": [
+        {
+            "__type__": "Note",
+            "fields": [
+                "Challenges of Distributed Computing",
+                "* Scalability<br>&nbsp; * Independent parallel processing of sub requests or tasks<br>&nbsp; * More servers allows to serve more concurrent requests<br>* Fault Tolerance<br>&nbsp; * Hide and recover from software and hardware failures<br>&nbsp; * Replicate data and service for redundancy<br>* High Availability<br>* Consistency<br>&nbsp; * Data stored and produced by multiple services must lead to consistent results<br>* Performance<br>&nbsp; * Low-latency processing with high throughput"
+            ],
+            "guid": "H5C35#DoAm",
+            "note_model_uuid": "c7338896-9674-11ed-869b-9b2970bf38d4",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "What is the CAP Theorem and name one CP, one CA, and one AP System",
+                "Choose two of out<br><ol><li>Consistency</li><li>Availability</li><li>Partition tolerance</li></ol><ul><li><b>CP Category</b>: Risk of data becoming unavailable, e.g. MongoDB, Redis, BigTable, Memcache</li><li><b>CA Category</b>:&nbsp;Network problem might stop the system, e.g. RDBMS: Oracle, SQL Server, MySQL</li><li><b>AP Category</b>:&nbsp;Clients may read inconsistent / stale data, e.g. Cassandra</li></ul>"
+            ],
+            "guid": "sGHG,M`HW!",
+            "note_model_uuid": "c7338896-9674-11ed-869b-9b2970bf38d4",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "What is the PUE ratio?",
+                "<ul><li><b>P</b>ower&nbsp;<b>U</b>sage&nbsp;<b>E</b>ffectiveness</li><li>PUE is the ratio of $\\frac{\\text{total amount of used energy by DC}}{\\text{total energy delivered to computing equipment}}$</li><li>Its the&nbsp;<b>inverse</b>&nbsp;of the data center infrastructure efficency</li></ul>"
+            ],
+            "guid": "wyc`UP5`E#",
+            "note_model_uuid": "c7338896-9674-11ed-869b-9b2970bf38d4",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "Difference between Replication and Partitioning",
+                "<b>Replication</b><br><ul><li>Keeps copy of the same data on different nodes<br></li><li>Provides redundancy</li><li>Reduces latency for high load / distribution around the globe</li></ul><div><b>Partitioning</b></div><div><ul><li>Split the big dataset into smaller subsets called partitions</li><li>Each partition placed on seperate node</li><li>Reduces latency for analytical jobs</li><li>Can improve availability</li></ul><div>One can combine both approaches</div></div>"
+            ],
+            "guid": "d>{v2]]xT7",
+            "note_model_uuid": "c7338896-9674-11ed-869b-9b2970bf38d4",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "Difference between Synchronous and Asynchronous Replication",
+                "<ul><li><b>Synchronous</b>: Leader waits until all followers confirmed the write</li><li><b>Asynchronous</b>: Leader sends updates to followers but does not wait for confirmation<br></li></ul><div>Synchronous replication for consistency -&gt; Guarantee to always have up to date version of data</div><div>Asynchronous replication for availability -&gt; System can still write even if followers are dead</div>"
+            ],
+            "guid": "eX|#BDYQ2X",
+            "note_model_uuid": "c7338896-9674-11ed-869b-9b2970bf38d4",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "How to add a new Follower?",
+                "Copying data is not enough due to new writes during copying<br><br><ol><li>Take a consistent snapshot of leader's DB, e.g. from the backup</li><li>Copy the snapshot to the new follower</li><li>Receive the leader's replication log since the snapshot</li><li>After processing the backlog, the new follower has caught up</li></ol>"
+            ],
+            "guid": "BCHU[|@}&&",
+            "note_model_uuid": "c7338896-9674-11ed-869b-9b2970bf38d4",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "What are 4 different implementations of the Replication Log?",
+                "Statemement based replication<br>* Leader logs every write request (statement) that it executes<br>* Problem with `set updated_at = now()` since the timestamp will differ for each follower<br><br>Write-ahead log (WAL) based replication (physical log)<br>* Log the write statements on the internal data structures (e.g. B-Tree) to an append-only log<br>* WAL is coupled to the storage engine. Doesn't support followers with different low-level data structures / storage backends.<br><br>Change data capture (CDC) based replication (logical log)<br>* Stream of records describing the logical updates to the table, e.g. for new records the inserted values, for delete the unique id, etc.<br>* Can be implemented by different storage engines for different followers<br><br>Trigger-based replication (done in application layer)<br>* Third party replication tools that replicate based on SQL triggers running on the primary server(s)"
+            ],
+            "guid": "L<YPo{uLr3",
+            "note_model_uuid": "c7338896-9674-11ed-869b-9b2970bf38d4",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "Name two problems with eventual consistency",
+                "<ol><li><b>Reading your own writes:</b>&nbsp;Reading from a follower after writing to the leader may lead to reading the old value instead of the just newly written since the replication is asynchronous and might not have happened yet.<br></li><li><b>Monotonic reads:</b>&nbsp;If sending multiple read requests to different follower replicas, they might return different results or no results.</li></ol>"
+            ],
+            "guid": "zm0:o+Z2`M",
+            "note_model_uuid": "c7338896-9674-11ed-869b-9b2970bf38d4",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "What is a multi-leader replication and name different conflict resolution strategies",
+                "Have a leader for each datacenter, each client has a database acting as a leader for offline operations, collaborative editing<br>Leaders then try to resolve the conflicts<br><br><ol><li><b>Conflict avoidance:</b>&nbsp;Make all writes for partition / particular record go through the same leader<br></li><li><b>Converging to a consistent state:</b>&nbsp;Last Writer Wins (LWW) -&gt; Write with timestamp / ID and highest id or newest timestamp wins. Let the application decide on a custom conflict resolution</li><li><b>Conflict-free Replicated Data Types (CRDTs)</b><br></li></ol>"
+            ],
+            "guid": "vRTas,<U((",
+            "note_model_uuid": "c7338896-9674-11ed-869b-9b2970bf38d4",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "What is leaderless replication, how are conflicts handeled, name two DBs using leaderless replication and explain how a crashed node catches up.",
+                "Client writes to and reads from multiple nodes in the system (using Quorum). Version numbers are used to determine which value is newer in case of conflicts.<br><br>* No failover when a node fails<br>* Used in Dynamo DB, Cassandra<br><br>How does a node catch up with missed writes?<br>Replication system ensures that *eventually* all data is copied to every replica<br>* **Read repair**: Client detectes stale response on a node and writes newer value back to replica. Works well for frequently read values.<br>* **Anti-entropy process**: Background process checks for inconsistencies and fixes them. Order is not preserved opposed to leader-based replication mechanism<br>"
+            ],
+            "guid": "enPTD58@e~",
+            "note_model_uuid": "c7338896-9674-11ed-869b-9b2970bf38d4",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "Name limitation of Quorum Consistency in Leaderless replications",
+                "Even with $w + r &gt; n$ there are edge-cases where stale values are returned<br>* Sloppy quroum<br>&nbsp; * Used in case of network partitioning. Read and writes still require $r$ and $w$ responses, but they can be from temporary / backup nodes and not the designated node. Once network is fixed, they are sent to the designated nodes (**hinted handoff**)<br>&nbsp; * Until hinted handoff is completed, there are no consistency guarantees even if quroum was reached.<br>* Two concurrent writes<br>* Read and write happens at the same time<br>* Node with new value fails and data is restored from replica with old data<br>* Write succeeded on&nbsp; $&lt; w$ nodes and failed on the others. Since their is no leader, the data does not get rolled back and reads may not return the values from that write."
+            ],
+            "guid": "Ixj!b)+$#[",
+            "note_model_uuid": "c7338896-9674-11ed-869b-9b2970bf38d4",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "Advantages of Partitioning",
+                "* Better scalability<br>&nbsp; * Different partitions on different nodes in a shared nothing cluster<br>* Reduce contention<br>* Improve performance<br>&nbsp; * Allows individual operations on smaller data volume and better parallelization<br>* Optimize storage costs<br>* Improve security<br>&nbsp; * Seperate sensitive and non-sensitive data with different security controls<br>* Better availability<br>&nbsp; * Avoid single point of failure"
+            ],
+            "guid": "KDM4b|iDQ#",
+            "note_model_uuid": "c7338896-9674-11ed-869b-9b2970bf38d4",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "Name different types of partitions",
+                "* Horizontal pratition (sharding)<br>&nbsp; * Each partition is a separata data store but all partitions have same schema<br>&nbsp; * Each partition is a shard and holds specific subset of the data<br><br>* Vertical partitioning<br>&nbsp; * Each partition holds a subset of the fields for items in the data store<br>&nbsp; * Frequently accessed fields on one partition, rest on a different one<br><br>* Functional partitioning:<br>&nbsp; * Data is aggregated according to how it's used by context in the system<br>&nbsp; * E-Commerce stores invoice data in one partition, product inventory data in another"
+            ],
+            "guid": "vAIBp|Drx6",
+            "note_model_uuid": "c7338896-9674-11ed-869b-9b2970bf38d4",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "Name horitzontal partitioning strategies with Advantages and Disadvantages",
+                "**By Key Range**: Assign a continuous range of keys to each partition, e.g. [A, D], [E, M], [N, Z]<br>* Advantages<br>&nbsp; * In each partition the keys are in sorted order -&gt; Range scans are fast and easy<br>&nbsp; * Can fetch related records in one query<br>* Disadvanges<br>&nbsp; * Access patterns can lead to hot spots<br><br>**By Hash of Key**: Hash they key to determine the partition. Each partition has a range of hashes<br>* Advantages<br>&nbsp; * No problem with skew and hot spots due to random distribution of hashing<br>* Disadvantages<br>&nbsp; * Range queries are inefficient and hard"
+            ],
+            "guid": "rQFn;r~S(4",
+            "note_model_uuid": "c7338896-9674-11ed-869b-9b2970bf38d4",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "How to Rebalance Partitions?",
+                "**Fix number of Partitions P such that $P \\gg N$**<br>* If node is removed / added, only few (entire) partitions need to be moved, e.g. each node sends one of its partitions to the new node<br>* Number of partitions stays the same and assignment of keys to partitions is not changed, only assignmend of node to partition<br><br>**Dynamic partitioning**<br>* When a single partition grows over a threshould, split it into two (like B-tree)<br><br>**Consistent hashing**<br>* Hash $\\mod N$ on a ring and place nodes along the ring. New nodes gets all the data in front of it / behind the prev node"
+            ],
+            "guid": "P!t6_{Oew~",
+            "note_model_uuid": "c7338896-9674-11ed-869b-9b2970bf38d4",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "Horizontal Partitioning Request Routing: How to know which node to ask?",
+                "<ol><li>Node layer: Individual nodes know which nodes keep which data and forward the request to the correct node. Use e.g. Gossip Protocol to communicate cluster changes.</li><li>Routing tier: Use coordination service (e.g. Zookeeper) as a proxy which forwards the request to the correct node</li><li>Client knows directly which node keeps which partitions</li></ol>"
+            ],
+            "guid": "j6i{apMbP",
+            "note_model_uuid": "c7338896-9674-11ed-869b-9b2970bf38d4",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "What is MTTR, MTBF, and FMA?",
+                "* MTTR = Mean Time To Recovery<br>* MTBF = Mean Time Between Failures<br>* FMA = Failure mode analysis<br>Use to add redundancy and to determine SLAs"
+            ],
+            "guid": "Po.?[,}V3_",
+            "note_model_uuid": "c7338896-9674-11ed-869b-9b2970bf38d4",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "SLO and SLA",
+                "* Service Level Objective (SLO)<br>&nbsp; * Agreement about metric, e.g. percentage of requests that need to return correct response time within specified timeout<br>&nbsp; * E.g. *99.9% of requests in a day get a response in 200ms*<br>* Service Level Agreement (SLA)<br>&nbsp; * Contract specifying some SLO, penalties for violation"
+            ],
+            "guid": "r=@[X=a|gK",
+            "note_model_uuid": "c7338896-9674-11ed-869b-9b2970bf38d4",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "What is a Failure, Fault, Fault tolerance and SPOF?",
+                "* Failure: System as a **whole** is not working<br>* Fault: **Some part** of the system is not working<br>&nbsp; * Node fault: Crash or deviating from algorithm (Byzantine)<br>&nbsp; * Network fault: Dropping / Delaying messages<br>* Fault tolerance: System as a whole keeps working, despite faults<br>* SPOF = Single point of failure. Node / Network fault leads to failure"
+            ],
+            "guid": "yz*;,.mz_n",
+            "note_model_uuid": "c7338896-9674-11ed-869b-9b2970bf38d4",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "Failure detector",
+                "* Failure detector is an algoruthm that detects whether another node is faulty<br>* Perfect failure detector = labels a node as faulty iff it has crashed<br>* Typical implementation is send messges, await responses, label node as crashed if no reply within some timeout<br>&nbsp; * Cannot tell the difference between *crashed node*, *temporarily unresponsive node*, *lost message*, and *delayed message*"
+            ],
+            "guid": "B`1ASwa`w%",
+            "note_model_uuid": "c7338896-9674-11ed-869b-9b2970bf38d4",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "Name the 3 different System Models",
+                "<ol><li>Network behavior (e.g. message loss)</li><li>Node behavior (e.g. crashes)</li><li>Timing behavior (e.g. latency)</li></ol><div>Specific choice of models for each of these parts</div>"
+            ],
+            "guid": "OddqB}qp0(",
+            "note_model_uuid": "c7338896-9674-11ed-869b-9b2970bf38d4",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "System Model: Network Behavior",
+                "Assume a bi-directional point-to-point communication between two nodes, with one of<br><ol><li><b>Reliable (perfect) links:</b>&nbsp;Message is received iff it is sent. Messages may be reordered</li><li><b>Fair-loss links:</b>&nbsp;Message may be lost, duplicated, reordered. By retrying, a message eventually gets through<br></li><li><b>Arbitrary links</b>&nbsp;(active adversary): Malicious adversary may interfere with messages (spy, modify, drop, spoof, replay)</li></ol><div><ul><li>Arbitrary + TLS = Fair-loss links (adversary can still drop messages)</li><li>Fair-loss + (Retry + Dedup) = Reliable links&nbsp;</li></ul></div>"
+            ],
+            "guid": "NfNv1StfQx",
+            "note_model_uuid": "c7338896-9674-11ed-869b-9b2970bf38d4",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "System Model: Node Behavior",
+                "Each node executes a specified algorithm, assuming one of the following<br>* **Crash-stop** (fail-stop):<br>&nbsp; &nbsp; * A node is faulty if it crashes (at any moment). Stops executing forever after crash<br>* **Crash-recovery** (fail-recovery):<br>&nbsp; &nbsp; * A node may crash at any moment, losing its in-memory state. Resumes executing sometime later. Data stored on disk survies the crash.<br>* **Byzantine** (fail-arbitrary):<br>&nbsp; &nbsp; * A node is faulty if it deviates from the algorithm. Faulty nodes may do anything, including crashing or malicious behavior<br><br>None faulty node is called **correct**."
+            ],
+            "guid": "FrjFgBG3i:",
+            "note_model_uuid": "c7338896-9674-11ed-869b-9b2970bf38d4",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "System Model: Timing assumptions",
+                "Assume one of the following for network and nodes:<br>* **Synchronous**<br>&nbsp; &nbsp; * Message latency no greater than a known upper bound. Nodes execute algorithm at a known speed<br>* **Partially synchronous**<br>&nbsp; &nbsp; * System is asynchronous for some finite unkown periods of time, synchronous otherwise<br>* **Asynchronous**<br>&nbsp; &nbsp; * Messages can be delayed arbitrarily. Nodes can pause execution arbitrarily. No timing guarantees at all."
+            ],
+            "guid": "vPuNj^epo)",
+            "note_model_uuid": "c7338896-9674-11ed-869b-9b2970bf38d4",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "Synchrony in Practice",
+                "* Networks **usually* have predictable latency, can occasionally increase (message loss, congestion causing queueing, ...)<br>* Nodes **usually* execute code at predictable speed, can occasioanl pause (OS scheduling, garbage collection, page faults)<br><br>Real time operationg systems (RTOS) provide scheudling guarantees, not often used in distributed systems"
+            ],
+            "guid": "g{~c0P/XjQ",
+            "note_model_uuid": "c7338896-9674-11ed-869b-9b2970bf38d4",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "Physical Clocks",
+                "* Computers use Quartz clocks which are cheap but not accurate<br>* Clock error is called **drift** and is measured in parts per million (ppm). Most computers correct within 50 ppm<br>* Use atomic clocks for greater accuracy<br>* Clocks synchronize using Network Time Protocol (NTP) and Precision Time Protocol (PTP)<br>&nbsp; * Make multiple requests to same server with more accurate clock to reduce error statistically<br>* Clock **skew** is the difference between two clocks at a given moment<br>* Google's TrueTime API exposes uncertainty by returning an [earliest, latest] interval for a timestamp"
+            ],
+            "guid": "D_kvR)h4n{",
+            "note_model_uuid": "c7338896-9674-11ed-869b-9b2970bf38d4",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "Logical vs Physical Clocks",
+                "* Physical clocks count number of seconds elapsed<br>&nbsp; * May be inconsistent with causality<br>* Logical clocks count number of events occurred<br>&nbsp; * Designed to capture causal dependencies<br>&nbsp; * $(e_1 \\rightarrow e_2) \\longrightarrow (T(e_1) &lt; T(e_2))$<br>&nbsp; * Lamport and Vector clocks"
+            ],
+            "guid": "Eua1%O;!<y",
+            "note_model_uuid": "c7338896-9674-11ed-869b-9b2970bf38d4",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "Vector clocks",
+                "* Able to detect concurrent events but only have a partial ordering, not a total order<br>* Assume $n$ nodes, $N = &lt;N_1, N_2, \\dots, N_n&gt;$<br>* Vector timestamp of event $a$ is $V(a) = &lt;t_1, \\dots, t_n&gt;$<br>* One event at node $N_i$, increment vector element $T[i]$<br>* Attach current vector timestamp to each message"
+            ],
+            "guid": "i6PaY/zIuP",
+            "note_model_uuid": "c7338896-9674-11ed-869b-9b2970bf38d4",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "Different reliable Broadcasts",
+                "* FIFO broadcast<br>&nbsp; * If $m_1$ and $m_2$ are broadcasted by the same node, and $broadcast(m_1) \\rightarrow broadcast(m_2)$, then $m_1$ must be delivered before $m_2$<br>* Causal broadcast<br>&nbsp; * If $broadcast(m_1) \\rightarrow broadcast(m_2)$, then $m_1$ must be delivered before $m_2$ on any node<br>* Total order broadcast<br>&nbsp; * If $m_1$ is *delivered* before $m_2$ on one node, then $m_1$ must be delivered before $m_2$ on all nodes. $m_2$ can be broadcasted before $m_1$.<br>* FIFO-total order broadcast<br>&nbsp; * Combination of FIFO broadcast and total order broadcast&nbsp;"
+            ],
+            "guid": "z,PoQu#gE]",
+            "note_model_uuid": "c7338896-9674-11ed-869b-9b2970bf38d4",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "Total Order Broadcast Algorithms",
+                "**Single Leader approach**<br>* To broadcast message, send it to the leader which broadcasts it via FIFO broadcast<br>* If leader crashes no more messages are delivered<br>* Changing leader is difficult<br><br>**Logical Clocks approach**<br>* Attach Lamport timestamp to every message and deliver message in total order of timestamp<br>&nbsp; * Vector clocks don't provide total order, only Lamport Clocks do<br>* How do you know you have seen all messages with timestamp $&lt; T$?<br>&nbsp; * Use FIFO links and wait for messages with $\\geq T$ from every node"
+            ],
+            "guid": "B>):Z>F?#v",
+            "note_model_uuid": "c7338896-9674-11ed-869b-9b2970bf38d4",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "Replication using Broadcast",
+                "* Total Order broadcast<br>&nbsp; * Every node delivers same messages in same order<br>* State machine Replication (SMR)<br>&nbsp; * FIFO-total order broadcast every update to all replicas<br>&nbsp; * Replica delivers update message -&gt; apply to own state<br>&nbsp; * Applying update is deterministic<br>&nbsp; * Replica is a state machine: Starts in fixed initial state, goes through same sequence of state transitions in the same order $\\rightarrow$ All replicas end up in the same state<br>&nbsp;<br>SMR Limitations<br>* Cannot update state immediately, have to wait for delivery through broadcast<br>* Need fault-tolerant total order broadcast"
+            ],
+            "guid": "CPs@`L9DwU",
+            "note_model_uuid": "c7338896-9674-11ed-869b-9b2970bf38d4",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "Replication using causal (and weaker) broadcast",
+                "If replica state updates are commutative, $f(g(x)) = g(f(x))$, replicas can process updates in differenr orders<br><br>* Total order $\\rightarrow$ Deterministic (SMR)<br>* Causal $\\rightarrow$ Deterministic, concurrent updates commute<br>* Reliable $\\rightarrow$ Deterministic, all updates commute<br>* Best-effort $\\rightarrow$ Deterministic, commutative, idempotent, tolerates message loss"
+            ],
+            "guid": "Np!F,LF~gA",
+            "note_model_uuid": "c7338896-9674-11ed-869b-9b2970bf38d4",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "Which 4 properties does a concensus algorithm satisfy?",
+                "<div><ol><li><b>Uniform agreement</b>&nbsp;- no two nodes decide differently</li><li><b>Integrity</b>&nbsp;- no node decides twice<br></li><li><b>Validity&nbsp;</b>- if a node decides value $v$, then $v$ was proposed by some node<br></li><li><b>Termination</b>&nbsp;- every node that does not crash, eventually decides some value<br></li></ol></div>"
+            ],
+            "guid": "M_xfzXld8m",
+            "note_model_uuid": "c7338896-9674-11ed-869b-9b2970bf38d4",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "Consensus system models",
+                "* Paxos, Raft, etc. assume a **partially synchronous, crash-recovery** system model<br>* Proven that no deterministic consensus algorithm exists, that is guaranteed to terminate in an asynchronous crash-stop system model"
+            ],
+            "guid": "A]@htB`Bj0",
+            "note_model_uuid": "c7338896-9674-11ed-869b-9b2970bf38d4",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "Consistency vs Isolation",
+                "* Transaction isolation = Avoiding race conditions due to concurrently executing transcations<br>* Distributed consistency = Coordinating state of replicas in the face of delays and faults"
+            ],
+            "guid": "lrqy+-q)?(",
+            "note_model_uuid": "c7338896-9674-11ed-869b-9b2970bf38d4",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "Atomic commit vs consensus",
+                "**Consensus**<br>&nbsp; * One or more nodes propose a value<br>&nbsp; * Any one of the proposed values is decided<br>&nbsp; * Crashed nodes can be tolerated if quorum is working<br><br>**Atomic commit**<br>* Every node votes whether to commit or abort<br>* Must commit if all nodes vote to commit. Must abort if $\\geq 1$ nodes vote to abort<br>* Must abort if a participating node crashes"
+            ],
+            "guid": "s;jyWCso!c",
+            "note_model_uuid": "c7338896-9674-11ed-869b-9b2970bf38d4",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "2PC",
+                "**Two-phase commit protocol** to ensure atomic commitment across multiple nodes<br>* Prepare phase $\\rightarrow$ All nodes need to ack<br>* If all nodes ack $\\rightarrow$ Commit Phase<br><br>Algorithm is blocked if the coordinator crashes $\\rightarrow$ Fixed with fault tolerant 2PC based on consensus for total order broadcast"
+            ],
+            "guid": "c!9##/}Wlg",
+            "note_model_uuid": "c7338896-9674-11ed-869b-9b2970bf38d4",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "Fault-tolerant 2PC",
+                "* Every node uses total order broadcast to commit or abort<br>* Don't need a coordinator, only total order broadcast using Raft Algorithm"
+            ],
+            "guid": "nbEz9LuGLd",
+            "note_model_uuid": "c7338896-9674-11ed-869b-9b2970bf38d4",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "What is Linearizability?",
+                "* Multiple concurrent accesses on replicated data need to **atomically** and behave as if executed on a **single copy** of the data<br>* Every operation returns an *up to date* value<br>* Same as strong consistency"
+            ],
+            "guid": "uI(B7j&O+U",
+            "note_model_uuid": "c7338896-9674-11ed-869b-9b2970bf38d4",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "What is Serializability?",
+                "Serializability = Multiple transactions appear to have occured in some total order."
+            ],
+            "guid": "Cwd(Q0XlyD",
+            "note_model_uuid": "c7338896-9674-11ed-869b-9b2970bf38d4",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "Difference of Linearizability vs Serializability",
+                "* Linearizability is guarantee of an individual object / single register.<br>* Serializability is a multi-object property for multiple transaction to some serial order. Does not guarantee read-after-write consistency.<br><br>If Serializability and Linearizability is provided, the system has **strict serializability** or **strong one-copy serializability** (strong 1SR)&nbsp;<br>and guarantees real-time constraints like read-after-write consistency."
+            ],
+            "guid": "uK&RpR>?^>",
+            "note_model_uuid": "c7338896-9674-11ed-869b-9b2970bf38d4",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "Examples of when we want Linearizability",
+                "* Locking and leader election<br>&nbsp; * Often implemented by coordination services, e.g. ZooKeeper<br>* Constraints and uniqueness guarantees<br>&nbsp; * Uniqueness constraints need linearizability, similar to atomic compare-and-swap<br>* Cross-channel timing dependencies<br>&nbsp; * Coordinating message delivery through more than one communicating channel"
+            ],
+            "guid": "gCOU^2|OP$",
+            "note_model_uuid": "c7338896-9674-11ed-869b-9b2970bf38d4",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "ABD Algorithm",
+                "* Goal to make quorum operations linearizable<br>* Send updates to all replicas and wait for acknowledgement from a quorum<br>* For a read, send requests to all replicas and wait for responses from a quorum<br>&nbsp; * If some include a more recent value then write back the most recent value to all stale replicas $\\rightarrow$ read-repair<br>&nbsp; * Get operation finishes only after most recent value is stored on a quorum of replicas"
+            ],
+            "guid": "dbZlOqX=wT",
+            "note_model_uuid": "c7338896-9674-11ed-869b-9b2970bf38d4",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "Linerizable Atomic Compare-and-swap",
+                "* CAS operation is not linearizable with the ABD algorithm<br>* Works with consensus using total order broadcast&nbsp;<br>&nbsp; * Broadcast every operation to perform&nbsp;<br>&nbsp; * Execute operation when it is delivered<br>&nbsp; * Like in SMR (state machine replication), this ensures an operation has the same effect and outcome on every replica"
+            ],
+            "guid": "o8%>sY$NIu",
+            "note_model_uuid": "c7338896-9674-11ed-869b-9b2970bf38d4",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "Difference between eventual and strong eventual consistency",
+                "* Eventual consistency: If there are no more updates, **eventually** all replicas will be in the same state<br>* Strong eventual consistency<br>&nbsp; * **Eventual delivery**: Every update made to one non-faulty replica is eventually processed by every non-faulty replica<br>&nbsp; * **Convergence**: Any two replicas that have processed the same set of updates are in the same state (even if updates where processed in a different order)"
+            ],
+            "guid": "j#jvAM+tIz",
+            "note_model_uuid": "c7338896-9674-11ed-869b-9b2970bf38d4",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "Causal consistency",
+                "If a system is ordered based on causality, we call it **causally consistent**<br>* Snapshot isolation provides causal consistency: When you read from database, and you see some data, then you must be able to see any data that causally preceded it"
+            ],
+            "guid": "K7XKgzUNl?",
+            "note_model_uuid": "c7338896-9674-11ed-869b-9b2970bf38d4",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "Causality vs Linearizability",
+                "* Linearizability<br>&nbsp; * Total order of operations<br>&nbsp; * System behaves as if it is non distributed (single copy of data, every operation is atomic)<br>* Causality:&nbsp;<br>&nbsp; * Partial order of operations<br>&nbsp; * Two operations are concurrrent if neither happened ebfore the other (they are incomparable)"
+            ],
+            "guid": "L!p7@[jqo{",
+            "note_model_uuid": "c7338896-9674-11ed-869b-9b2970bf38d4",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "Minimum system model requirements",
+                "<img src=\"minimum-system-model-requirments.png\">"
+            ],
+            "guid": "My-!aK5s%3",
+            "note_model_uuid": "c7338896-9674-11ed-869b-9b2970bf38d4",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "What Families of Conflict Resultion Algorithms exist?",
+                "* Conflict-free Replicated Data Types (CRDTs)<br>&nbsp; * Operation based<br>&nbsp; * State based<br>* Operational Transformations (OT)"
+            ],
+            "guid": "yX)FZe&8i1",
+            "note_model_uuid": "c7338896-9674-11ed-869b-9b2970bf38d4",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "Operation based CRDT",
+                "* On read: Return local value<br>* On write: Create globally unique timestamp and do reliable broadcast of triple `(timestamp, key, value)`<br>* Resolve conflicts using LWW approach<br><br>Gives us strong eventual consistency<br>* Reliable broadcast ensures every operation is eventually delivered to every replica<br>* Operation is commutative"
+            ],
+            "guid": "m5TLIU(s=D",
+            "note_model_uuid": "c7338896-9674-11ed-869b-9b2970bf38d4",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "State based CRDT",
+                "* On write: Apply value locally and broadcast all (map) values<br>* On delivery: Merge the two replica states using a merge function<br>* Merge operator $\\sqcup$ must satisfy<br>&nbsp; * Commutative: $s_1 \\sqcup s_2 = s_2 \\sqcup s_1$<br>&nbsp; * Associative: $(s_1 \\sqcup s_2) \\sqcup s_3 = s_1 \\sqcup (s_2 \\sqcup s_3)$<br>&nbsp; * Idempotent: $s_1 \\sqcup s_1 = s_1$"
+            ],
+            "guid": "f3ri;3mGU$",
+            "note_model_uuid": "c7338896-9674-11ed-869b-9b2970bf38d4",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "&nbsp;State based vs operation based CRDT",
+                "* Operation based CRDT has smaller messages<br>* State based CRDT can tolerate message loss / duplication"
+            ],
+            "guid": "pWhVrr0^b:",
+            "note_model_uuid": "c7338896-9674-11ed-869b-9b2970bf38d4",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "Name 3 different approaches for scaling out databases",
+                "* **Sharding** = Coupled at the application layer<br>* **Shared Nothing** = Coupled at the SQL Layer<br>* **Shared Disk** (Shared Data) = Coupled at the caching and storage layer<br><br><img src=\"oltp-cloud.png\">"
+            ],
+            "guid": "HYHxde*B1@",
+            "note_model_uuid": "c7338896-9674-11ed-869b-9b2970bf38d4",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "Name four prominent DBaaS architectures",
+                "* **Non-partitioned shared-nothing log replicated state machine**<br>&nbsp; * Single Machine having all data and replicating its log for backup<br>&nbsp; * Microsoft HADR for SQL Server<br>* **Non-partitioned shared-data**<br>&nbsp; * Disaggregated compute-storage: AWS Aurora, GCP AlloyDB<br>&nbsp; * Disaggregated compute-log-storage: Azure Socrates, Huawei Tauris, Alibaba PolarDB<br>&nbsp; * Disaggregated compute-buffer-log-storage: Alibaba PolarDB Serverless<br>* **Partitioned shared-nothing log replicated state machine**<br>&nbsp; * Multiple leaders, requires distributed transactions<br>&nbsp; * Spanner, CockroachDB, POLARDB-X<br>* Tightly coupled nodes over fast interconnect<br>&nbsp; * Oracle's RAC and Exadata"
+            ],
+            "guid": "q+_C$um$1X",
+            "note_model_uuid": "c7338896-9674-11ed-869b-9b2970bf38d4",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "How does Non-partitioned, shared-nothing Log Replicated State Machine (LRST) DB work? Name advantages and limitations",
+                "Architecture<br>* Primary node processes **all** update transactions<br>* Ships update logs to all follower replicas<br>* **Primary node** periodically backs-up data to Azure's storage service<br>* Followers process read-only queries<br>* 1 primary and 3 followers to guarantee high availability and durability<br><br>Advantages<br>* **High performance**<br>&nbsp; * Every compute node / primary node has a full, local copy of the database<br><br>Limitations<br>* Size of database is limited by capacity of single node<br>* O(size-of-data) operations is slow<br>&nbsp; * Adding new replica is linear with size of database<br>&nbsp; * Backup / Restore<br>&nbsp; * Scale-up and down<br>* Currently the size is limited to 4TB"
+            ],
+            "guid": "zl01mPgzhv",
+            "note_model_uuid": "c7338896-9674-11ed-869b-9b2970bf38d4",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "How does a non-partitioned shared-data LRSM work and what are some advantages?",
+                "* Seperate the compute service from the storage service<br><br>Advantages<br>* Easy to scale up / down compute nodes<br>* Easy to scale with respect to the size of the database<br>* Easy to replace unreachable / crashed compute nodes<br>* Replicating the storage across multiple nodes is not coupled with workload demand"
+            ],
+            "guid": "bq9Zh&VnXW",
+            "note_model_uuid": "c7338896-9674-11ed-869b-9b2970bf38d4",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "How does Amazon Aurora work and what are its key ideas / properties?",
+                "* Problem with non-partitioned shared-data LRSM is that data access are redundant writes to disk and lots of data needs to be sent over the network.<br>* Solution: **The Log is the Database**<br>&nbsp; * Compute nodes only write redo log records to storage layer.&nbsp;<br>&nbsp; * Storage layer re-constructs the page images from the log records<br><br>Advantages<br>* Reduces network I/O, only log records + metadata get send<br>* Processing (check-pointing, backup etc) moved to storage layer&nbsp;&nbsp;<br><br>Quorum<br>* Aurora replicates all writes with $4/6$ write and $3/6$ read quorum<br>* Can tolerate loss of entire AZ&nbsp;<br><br>Data Sharding for fast repairs and catch-up<br>* Aurora's replication based on sharding and scale-out<br>* DB is sharded into 10GB logical units<br>&nbsp; * Unit is replicated six ways, spread across large distributed storage fleet<br><br>Storage layer<br>1. Receive log record with Log Sequence Number (LSN) and add it to in-memory queue<br>2. Persist record on disk and ack<br>3. Organize records and identify gaps in the log since batches may be lost<br>4. Gossip with peers to fill gaps<br>5. Coalesce log records into new data pages<br>6. Periodically stage log and pages to S3<br>7. Periodically garbage collect old versions<br>8. Periodically validate CRC codes on pages<br><br>On Read<br>* Read from cache<br>* On cache miss<br>&nbsp; * Quorum read is expensive. Client-side storage driver tracks successful persistent segments. Can be read without quorum<br>&nbsp; * Quorum only needed during recovery on database instance restart. Initial set of LSN must be reconstructed<br><br><img src=\"aws-aurora.png\"><img src=\"aurora-storage-service.png\">"
+            ],
+            "guid": "hUSYhZ#geJ",
+            "note_model_uuid": "c7338896-9674-11ed-869b-9b2970bf38d4",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "Advantages and disadvantages of compute-storage architectures",
+                "Advantages<br>* Low write latency<br>&nbsp; * Write can be commited without waiting for updating pages in storage nodes<br>* Reduce write amplification<br>&nbsp; * Log replay is pushed down to storage layer<br>&nbsp; * Shared-storage architecture. Single instance does not maintain multiple storage replicas<br>* Better elasticity<br>&nbsp; * Compute and storage can be scaled independently<br><br>Limitations<br>* High read latency on cache miss due to Quorum read and log replaying if updated data not yet persistent"
+            ],
+            "guid": "L9F=ycBItV",
+            "note_model_uuid": "c7338896-9674-11ed-869b-9b2970bf38d4",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "What is the idea of Microsoft Hyperscale (Socrates)?",
+                "Key ideas<br>* Seperate Log from Storage<br>&nbsp; * Log is potential bottleneck in **any OLTP system**<br>&nbsp; * Every update must be logged before commiting transcation<br>&nbsp; * Log is shipped to all replicas for consistency<br>&nbsp; * Log on slow storage media has bad performance<br>* Differentiate of fast vs slow storage<br>&nbsp; * Make log durable in fast storage and fault-tolerant by replicating<br>&nbsp; * Reading and shipping log records is more scalable if log is decoupled from other storage<br><br>Advantages<br>* Seperates durability (provided by the log) from availability (provided by the storage service)"
+            ],
+            "guid": "eP_.{_2Bz6",
+            "note_model_uuid": "c7338896-9674-11ed-869b-9b2970bf38d4",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "Explain the Disaggregated Compute-Log-Storage Architecture",
+                "Compute tier<br>* Compute Nodes<br>* Primary instance handles all read / write transactions. Follower handle read-only queries<br>* Cache hot pages in memory<br><br>Log tier<br>* Seperate log service to ensure low commit latencies and good scalability<br><br>Storage tier<br>* Each page server keeps copy of a partition of the db in-memory or fast local SSDs<br><br>Azure Storage Service tier<br>* Page servers checkpoint data pages and create backups in XStore tier (slow but cheap)<br><br><img src=\"azure-socrates.png\">"
+            ],
+            "guid": "E]lUOsl1/u",
+            "note_model_uuid": "c7338896-9674-11ed-869b-9b2970bf38d4",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "Explain the XLOG Service and Process",
+                "* Primary Compute node writes log blocks directly to fast durable storage Landing Zone (LZ)<br>&nbsp; * Synchronous operation with low latency<br>&nbsp; * 3 replicas of all data for durability<br>* XLOG Process<br>&nbsp; * Send log blocks to Page Servers and follower replicas. Writes are async and possibly lossy.&nbsp;<br>&nbsp; * Waits for blocks to be made durable<br>&nbsp; * Orders blocks after gossip protocol due to possible loss<br>&nbsp; * Archives to local and remote storage<br>* Followers / Page Servers pull log blocks from XLOG service<br><br>LZ for durabiltiy, XLOG for availabily<br><img src=\"azure-socrates-xlog.png\">"
+            ],
+            "guid": "PVk^I/q-=U",
+            "note_model_uuid": "c7338896-9674-11ed-869b-9b2970bf38d4",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "Advantages and Disadvantages of Compute-Log-Storage Architecture",
+                "Advantages<br>* Low write latency<br>&nbsp; * With fast log storage service writes can be commited faster<br>* Better elasticity<br>&nbsp; * Log and page storage can be scheduled independently, balance between cost and the performance<br><br>Disadvantages<br>* High read latency on cache miss<br>&nbsp; * Queries in computing nodes must wait for log replay<br>* Complex recovery algorithm (data may be recovered from log storage)"
+            ],
+            "guid": "b?Ox^*ShTx",
+            "note_model_uuid": "c7338896-9674-11ed-869b-9b2970bf38d4",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "Name key idea, the write, sync, and read path for disaggregated Compute-Buffer-Storage Architecture",
+                "Key feature<br>* Elastic shared remote buffer for all compute nodes (read-write and read-only)<br><br>Data write path<br>* Primary updates local page in cache and generates redo log<br>* Redo log writes to log storage (multi-replicas) for durability<br>* Commit write after redo-log is durable<br>* Corresponding page in buffer is updated simultaneously<br><br>Data sync path<br>* Page in shared buffer is not written to storage nodes<br>* Redo logs are replayed to page storage asynchronously<br>* Directly transfer logs to Read only nodes to reduce update latency<br><br>Data read path<br>* Compute node checks in local cache<br>* On miss, check remote buffer<br>* On miss, read from page storage nodes, update caches<br><br><img src=\"alibaba-polardb.png\">"
+            ],
+            "guid": "c_0Nni2dvK",
+            "note_model_uuid": "c7338896-9674-11ed-869b-9b2970bf38d4",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "Advantages, and Limitations for Disaggregated Compute-Buffer-Storage Architecture",
+                "Advantages<br>* Reduce read latency with shared remote memory<br>* Reduce duplicate data loading process of different compute nodes $\\rightarrow$ increase throughput<br>* Memory resources can be allocated on demand $\\rightarrow$ Elasticity<br><br>Limitations<br>* Network bottleneck of buffer layer<br>&nbsp; * Remote memory requires high network throughput and low latency at the same time<br>&nbsp; * Network may become bottleneck of the entire database"
+            ],
+            "guid": "NE.]&$M|D0",
+            "note_model_uuid": "c7338896-9674-11ed-869b-9b2970bf38d4",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "Spanner - Partitioned LRSM",
+                "* Shard data logically into partitions (splits)<br>* Copies of splits are consistent using Paxos<br>&nbsp; * Only leader can modify partition, other replicas only read<br><br>Consistent snapshots with&nbsp;Multi-Version Concurreny Control (MVCC)<br>* Each read-write transaction $T_w$ has commit timestamp $t_w$<br>&nbsp; * Every value the transcation wrote is tagged with timestamp $t_w$<br>* Read only transaction has $T_r$ has snapshot $t_r$<br>&nbsp; * $T_r$ ignores values with $t_w &gt; t_r$<br><br>Use True Time API to deal with clock uncertainity<br>* True Time API returns [$t_{earliest}$, $t_{latest}$]<br>* On commit, wait $t_{latest} - t_{earliest}$ before commiting and realising locks<br>* Assign $t_{latest}$ as timestamp for transaction<br><br>Clock servers communicate with atomic clock and GPS receiver to stay accurate<br>* Assume worst case drift of 200ppm"
+            ],
+            "guid": "r76I&dKAIB",
+            "note_model_uuid": "c7338896-9674-11ed-869b-9b2970bf38d4",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "Distributed transactions can scale",
+                "Oracle's RAC and Exadata<br>* Nodes of a cluster are tightly coupled on a fast InfiBand interconnect<br>* Shared cache fusion layer over distributed storage tier with storage cells<br>&nbsp; * Optimized network writes / transfers<br><br>Use low-latency high-bandwidth network **interconnects** using **Remote Direct Memory Access** (RDMA)<br>* Strong consistency is not hard: 2PL and 2PC on thousand of cores<br>* No compromises: Distributed transactions with consistency, availability, and performance"
+            ],
+            "guid": "F@XK;s__Z,",
+            "note_model_uuid": "c7338896-9674-11ed-869b-9b2970bf38d4",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "Shared-nothing cloud data warehouse",
+                "* Every query processor node (slice / DB) has its own local attached storage (disk)<br>* Data is horizontally partitioned across processor nodes<br>* Each node is only responsible for the rows on its own local disk<br>* Scales well for star-schema queries as little bandwidth is required to join<br><br>Example: Old version of AWS Redshift<br>* Each compute node has dedicated CPU, memory, and locally attached disk storage<br>* Memory, storage, and data partitioned among the slices<br>* Hash and round-robin table partitioning / distribution<br>* Leader distributed data to slices and gives workload to them<br>&nbsp; * Number of slices per node depends on node size<br>* Redshift decides how to distribute data between the slices within a node<br><br>Within a slice<br>* Data stored in columns<br>* Columns stored in 1MB blocks<br><br>Fault tolerance<br>* Each 1MB block is replicated on different compute node and stored on S3<br><br>Handling node failures<br>* If Node fails, different node processes load until nod eis restored<br>* Or, new node is instantiated<br>&nbsp; * Uses S3 as data until local disks are restored<br><br>Drawbacks<br>* Tightly couples compute and storage resources<br>* Hereogeneous workloads<br>&nbsp; * Good fit for bulk loading (high I/O bandwidth, light compute)<br>&nbsp; * Is bad for complex queries (low I/O, heavy compute)<br>* If set of nodes changes a large volume of data needs to be reshuffled"
+            ],
+            "guid": "NEtiw(]UdR",
+            "note_model_uuid": "c7338896-9674-11ed-869b-9b2970bf38d4",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "What are the key features and advantages of Disaggregated Compute-Storage Architectures? Name two examples",
+                "Advantages<br>* Elasticity: Storage and compute resources can be scaled independently<br>* Availability: Tolerate cluster and node failures<br>* Heterogeneous workloads: High I/O bandwidth or heavy compute<br><br>Key features<br>* Disaggregation of compute and storage<br>* Multi-tenancy<br>* Elastic data warehouse<br>* Local SSDs caching<br>* Cloud storage service, e.g. S3<br><br>Examples<br>* Snowflake<br>* New AWS Redshift"
+            ],
+            "guid": "Qf,3{w0tc{",
+            "note_model_uuid": "c7338896-9674-11ed-869b-9b2970bf38d4",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "How does Snowflake's Architecture look like?",
+                "Layers<br>* Key data management service<br>* Shared-nothing execution engines (Virtual Warehouse)<br>* Shared-storage for data and query results<br><br>Table Storage<br>* Tables are horizontally partitioned into large **immutable** files<br>* Within each file<br>&nbsp; * Values of each attribute are grouped together&nbsp;<br>&nbsp; * Heavily compressed<br>* MinMax value of each column for query processing<br><br>Virtual Warehouse<br>* Dynamically created cluster of AWS EC2 instance<br>* Local disk cache file headers and table columns<br>* Can resize the number of EC2 instances and the number of cores and I/O capacity of each instance<br>* Each query mapped to exactly one virtual warehouse<br>* Many Virtual Warehouse run multiple queries in parallel<br>* Every Virtual Warehouse with access to the **same shared table** without need to copy data<br><br><img src=\"snowflake-architecture.png\">"
+            ],
+            "guid": "u0Z5UV.&%)",
+            "note_model_uuid": "c7338896-9674-11ed-869b-9b2970bf38d4",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "What are Advantages and Key features from disaggregated Compute-Memory-Storage Architecture? Name one example&nbsp;",
+                "Advantages<br>* Elasticity: Storage and compute resources can be scaled independently<br>* Centralized scheduling: Schedule the resources for better utilizaztion<br>* Complex workloads: Cope with the large intermediate results<br><br>Key features<br>* Disaggregation of compute and storage and memory<br>* Shuffle memory layer for speeding up joins<br>* Multi-tenancy, serverless<br>* Local SSDs for caching<br>* Cloud Storage Service, e.g. S3<br><br>Example<br>* Big Query<br><br><img src=\"compute-memory-storage-arch.png\">"
+            ],
+            "guid": "k46Fob?D*G",
+            "note_model_uuid": "c7338896-9674-11ed-869b-9b2970bf38d4",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "How does BigQuery work?",
+                "BigQuery uses a Producer Consumer Workflow<br>* Produces: Generate partitions and sends them to the in-memory nodes for shuffling<br>* Consumer: Combines received partitions and performs the operations locally<br>* Large intermediate results can be spilled to local disk<br>* Distributed Shuffle Tier reduces the shuffle latency by 10X, enables 10X larger shuffles and reduces resource cost by $&gt; 20\\%$<br><br><img src=\"in-memory-query-2ntao.max-700x700.PNG\">"
+            ],
+            "guid": "Oa{ik}:V;*",
+            "note_model_uuid": "c7338896-9674-11ed-869b-9b2970bf38d4",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "Stateless Compute Architectures Key points and two examples",
+                "* Compute Node should not hold any state information<br>* Caches need to be as close to the compute as possible<br>&nbsp; * Can be lazily reconstructed from persisten storage, no need to be decoupled from compute<br>* All data, transcational logs, and metadata need to be externalized<br>* Enables partial restart of query execution on node failure or changes of cluster topology<br><br>Examples<br>* BigQuery using shuffle tier and dynamic scheduler<br>* Azure POLARIS"
+            ],
+            "guid": "L<S{N={<Bh",
+            "note_model_uuid": "c7338896-9674-11ed-869b-9b2970bf38d4",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "How does the architecture of Polaris look like?",
+                "* Seperation of storage and compute<br>&nbsp; * Compute done by Polaris pools<br>* Shared centralized services<br>&nbsp; * Metadata and Transcations<br>* **Stateless architecture** within a pool<br>&nbsp; * Data stored durably in remote storage<br>&nbsp; * Metadata and transactional log is offloaded to centralized services<br>* Multiple pools can transcationally access the same logical database<br><br>Storage Layer<br>* Use **data cells** as an abstraction of underlying data format and storage system<br>* Hash based distribution to distribute data cells to compute nodes and prevent hot spots<br><br>Distributed Query Processing<br>* Queries are compiled in two phases<br>&nbsp; * Stage 1 uses SQL server query optimizer to generate logical plans<br>&nbsp; * Stage 2 does distributed cost-based query-optimization to pick one distributed physical plan with least estimate cost including data movement<br>* Query gets splitted into tasks $T_i$ with a physical execution. Task has three components<br>&nbsp; * Inputs: Collection of cells needed. Stored either in local or remote storage<br>&nbsp; * Task template: Code to execute on the compute nodes<br>&nbsp; * Output: Collection of cells produced by the task<br>* Create DAG of query plan and execute it in topological order<br><br>Summary<br>* Separation of state and compute and offers serverless processing<br>* Data cell abstraction for different storage systems<br>* Combines scale up (vectorized processing, columnar storage, cache-hierarchy optimizations) and scale out (distributied query processing)<br><br><img src=\"polaris-arch.png\">"
+            ],
+            "guid": "gqj5O9yjs2",
+            "note_model_uuid": "c7338896-9674-11ed-869b-9b2970bf38d4",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "Name the 5 different hybrid dataflow scheduler policies (streaming + batch processing)",
+                "Basic approach<br>* Each jobs use deidcated set of resources<br>* Separate engines for stream and batch processing<br>* Used in production env with general purpose resource managers with dedicated queues for latency critical jobs<br><br>FIFO<br>* Unified stream / batch engines&nbsp;<br>* Use on shared executor worker machines<br>* Each job gets priority on all resources as long as its stages have tasks to launch<br><br>FAIR<br>* Run tasks on shared executors in round-robin fashion<br>* All jobs receive equal share of resources<br>* Achieves better overall utilization and reduces stream response time<br><br>KILL<br>* Avoid queuing delays for latency-sensitive stream<br>* One policy is to do a non-work conserving preemption by killing tasks of batch job<br>* Side-effects may be bad for overall system performance<br>* Batch jobs need to start from scratch<br><br>SUSPEND<br>* Framework should suspend batch jobs in favor of higher-priority stream tasks and resume them when resouces are available<br>* Minimzes queuing latency and wasted work<br><br><img src=\"scheduler-policies.png\">"
+            ],
+            "guid": "JE{y_Q5[0r",
+            "note_model_uuid": "c7338896-9674-11ed-869b-9b2970bf38d4",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "What is the Job of the Cluster Managers and name its optimization goals",
+                "* Cluster managers enable resource sharing across users and applications<br>* Packs hardware resources (CPU, disk, memory) in containers, allocated on demand<br><br>Optimization goals<br>* Machines are efficiently shared<br>* Application performance is not hindered<br>* Majority of requirements are satisfied"
+            ],
+            "guid": "t-WProyDJi",
+            "note_model_uuid": "c7338896-9674-11ed-869b-9b2970bf38d4",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "Name differenct Cluster scheduling architectures with an example",
+                "Centralized<br>* Schedulers use same scheudling logic to choose placememtns for all and maintain up-to-date information centrally<br>* Pros: High quality placement&nbsp;<br>* Cons: Long placement latency<br>* Example: Borg<br><br>Two-level<br>* Simpel resource manager that allocates containers, and number of **application specific schedulers**, aware of their independent needs<br>* Centrally managed resources, but scheduling is delegated to frameworks dealing with workload requirmenets<br>* Example: Apache Mesos (for Spark)<br><br>Shared-state<br>* 2-level scheduling, but multiple application schedulers with different internal scheduling logic to have complete view of the cluster state<br>* Example: Kubernetes<br><br>Distributed<br>* Schedulers that achieve extreme scalability and low-latency allocations<br>* Use worker nodes that pull tasks from distributed schedulers or maintain queue of tasks locally to minimze idle period<br>* Example Sparrow<br><br>Hybrid<br>* Combine high quality placement of centralized schedlers and low scheduling latency of distributed schedulers<br>* Microsoft's Mercury<br><br>"
+            ],
+            "guid": "G94%u:X8Lc",
+            "note_model_uuid": "c7338896-9674-11ed-869b-9b2970bf38d4",
+            "tags": []
+        }
+    ]
+}
